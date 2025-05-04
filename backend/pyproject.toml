@@ -7,7 +7,7 @@ package-mode = false
 
 [tool.poetry.dependencies]
 python = ">=3.11,<4.0"
-pydantic = "^2.8.2"
+pydantic = {extras = ["email"], version = "^2.11.4"}
 fastapi = "^0.112.1"
 uvicorn = "^0.30.6"
 langchain = "^0.2.14"
@@ -19,6 +19,10 @@ python-dotenv = "^1.0.1"
 supabase = "^2.7.2"
 sqlalchemy = "^2.0.32"
 psycopg2-binary = "^2.9.9"
+pydantic-settings = "^2.9.1"
+sentry-sdk = "^2.27.0"
+colorlog = "^6.9.0"
+python-multipart = "^0.0.20"
 
 [tool.poetry.group.dev.dependencies]
 fastapi = "^0.112.1"

@@ -1,53 +1,44 @@
-import asyncio
-from langchain_core.prompts import ChatPromptTemplate
-from langchain_core.output_parsers import StrOutputParser
-from langchain_openai import ChatOpenAI
-from fastapi import HTTPException
-from fastapi.responses import StreamingResponse
-from sqlalchemy.orm import Session
+# app/services/chat_service.py
+from functools import lru_cache
+from typing import List
 from uuid import UUID
 
-TEMPLATE = """You are a helpful assistant. Respond to all user input with clear, concise, and informative responses.
+from sqlalchemy.exc import SQLAlchemyError
+from fastapi import HTTPException
 
-User: {input}
-AI:
-"""
+from crud.base_crud import BaseCRUD
+from dependencies import DBSessionDep
+from models.chat import Chat as ChatModel
 
-async def process_chat(model_id: str, messages, db: Session, chat_session_id: UUID):
-    current_message_content = messages[-1].content
-    prompt = ChatPromptTemplate.from_template(TEMPLATE)
-    
-    model = ChatOpenAI(
-        temperature=0.8,
-        model=model_id,
-        streaming=True
-    )
-    
-    chain = prompt | model | StrOutputParser()
-    
-    async def generate_chat_responses():
-        from app.models import Message
-        
-        full_response = ""
+
+class ChatService:
+    def __init__(self, chat_crud: BaseCRUD[ChatModel]):
+        self.chat_crud = chat_crud
+
+    async def create_chat(self, customer_id: UUID, merchant_id: UUID) -> ChatModel:
+        payload = {"customer_id": customer_id, "merchant_id": merchant_id}
         try:
-            async for chunk in chain.astream({"input": current_message_content}):
-                # Accumulate the chunks
-                full_response += chunk
+            return await self.chat_crud.create(payload)
+        except SQLAlchemyError:
+            raise HTTPException(status_code=500, detail="Failed to create chat")
 
-                # Stream the chunk to the client
-                yield f'0:"{chunk}"\n'
-        except Exception as e:
-            raise HTTPException(status_code=500, detail=str(e))
-        finally:
-            # Save the accumulated response to the database even if streaming was interrupted
-            if full_response:
-                db.add(Message(
-                    chat_session_id=chat_session_id,
-                    role="assistant",
-                    content=full_response
-                ))
-                db.commit()
+    async def get_chat_by_id(self, chat_id: UUID) -> ChatModel:
+        chat = await self.chat_crud.get_by_id(chat_id)
+        if not chat:
+            raise HTTPException(status_code=404, detail=f"Chat {chat_id} not found")
+        return chat
 
-    response =  StreamingResponse(generate_chat_responses())
-    response.headers["x-vercel-ai-data-stream"] = "v1"
-    return response
+    async def get_chats_for_customer(self, customer_id: UUID) -> List[ChatModel]:
+        return await self.chat_crud.get_all_by_field("customer_id", customer_id)
+
+    async def get_chats_for_merchant(self, merchant_id: UUID) -> List[ChatModel]:
+        return await self.chat_crud.get_all_by_field("merchant_id", merchant_id)
+
+    async def delete_chat(self, chat_id: UUID) -> None:
+        chat = await self.get_chat_by_id(chat_id)
+        await self.chat_crud.delete(chat.id)
+
+
+@lru_cache()
+def get_chat_service(db: DBSessionDep) -> ChatService:
+    return ChatService(BaseCRUD(ChatModel, db))

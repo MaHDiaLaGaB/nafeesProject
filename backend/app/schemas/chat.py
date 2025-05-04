@@ -1,39 +1,30 @@
-from pydantic import BaseModel
-from typing import List, Optional
 from uuid import UUID
 from datetime import datetime
+from pydantic import BaseModel
 
-# this schema is for returning message from db as response
-class MessageResponse(BaseModel):
+class MessageBase(BaseModel):
+    content: str | None = None
+    image_url: str | None = None
+
+class MessageCreate(MessageBase):
+    conversation_id: UUID
+
+class MessageOut(MessageBase):
     id: UUID
-    chat_session_id: UUID
-    role: str
-    content: str
+    sender_id: UUID
     created_at: datetime
 
-# this schema is for returning chat session from db as response
-class ChatSessionResponse(BaseModel):
+    class ConfigDict:
+        from_attributes = True
+
+class ChatCreate(BaseModel):
+    merchant_id: UUID
+
+class ChatOut(BaseModel):
     id: UUID
-    title: str
+    merchant_id: UUID
+    customer_id: UUID
     created_at: datetime
-    updated_at: datetime
 
-# this schema is for request to update a chat session's title
-class UpdateTitleRequest(BaseModel):
-    title: str
-
-"""
-Below schemas are related to request, actual message and response of LLM
-"""
-
-class ChatMessage(BaseModel):
-    role: str
-    content: str
-
-class ChatRequest(BaseModel):
-    sessionId: Optional[UUID]
-    model: str
-    messages: List[ChatMessage]
-
-class ChatResponse(BaseModel):
-    response: str
+    class ConfigDict:
+        from_attributes = True
