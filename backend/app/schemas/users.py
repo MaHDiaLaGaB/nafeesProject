@@ -1,6 +1,12 @@
 from uuid import UUID
+import enum
 from pydantic import BaseModel, EmailStr, Field
 from datetime import datetime
+
+class UserRole(str, enum.Enum):
+    merchant = "merchant"
+    customer = "customer"
+    superadmin = "superadmin"
 
 class UserBase(BaseModel):
     email: EmailStr

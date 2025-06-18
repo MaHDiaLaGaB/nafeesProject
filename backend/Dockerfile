@@ -17,7 +17,7 @@ ENV PATH="/root/.local/bin:$PATH"
 COPY pyproject.toml poetry.lock /app/
 
 # Install dependencies
-RUN poetry install --no-root --no-dev
+RUN poetry install --no-root
 
 # Copy the rest of the application code
 COPY . /app
@@ -26,4 +26,4 @@ COPY . /app
 EXPOSE 8000
 
 # Command to run the backend application
-CMD ["poetry", "run", "uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["poetry", "run", "uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8232"]

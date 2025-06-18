@@ -23,10 +23,15 @@ pydantic-settings = "^2.9.1"
 sentry-sdk = "^2.27.0"
 colorlog = "^6.9.0"
 python-multipart = "^0.0.20"
+torch = "^2.7.0"
+pillow = "^11.2.1"
+transformers = "^4.52.4"
 
 [tool.poetry.group.dev.dependencies]
 fastapi = "^0.112.1"
 uvicorn = "^0.30.6"
+pytest = "^8.3.5"
+black = "^25.1.0"
 
 [build-system]
 requires = ["poetry-core"]
