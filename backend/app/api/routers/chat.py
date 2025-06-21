@@ -21,10 +21,12 @@ router = APIRouter()
 
 # ---- HTTP endpoints for creating/fetching chats ----
 
+
 @router.post(
-        "/create-chat", 
-        summary="Start a new conversation",
-        dependencies=[Depends(role_required("customer"))],)
+    "/create-chat",
+    summary="Start a new conversation",
+    dependencies=[Depends(role_required("customer"))],
+)
 async def create_chat(
     payload: ChatCreate,
     current_user: CurrentUser,
@@ -35,28 +37,30 @@ async def create_chat(
 
 
 @router.get(
-        "/get/{chat_id}", 
-        summary="Get a conversation by ID",
-        dependencies=[Depends(role_required("customer", "merchant"))])
-async def read_chat(
-    chat_id: UUID, svc: ChatService = Depends(get_chat_service)
-):
+    "/get/{chat_id}",
+    summary="Get a conversation by ID",
+    dependencies=[Depends(role_required("customer", "merchant"))],
+)
+async def read_chat(chat_id: UUID, svc: ChatService = Depends(get_chat_service)):
     return await svc.get_chat_by_id(chat_id)
 
 
 @router.get(
     "/get/{chat_id}/messages",
     summary="List all messages in a conversation",
-    dependencies=[Depends(role_required("customer", "merchant"))]
+    dependencies=[Depends(role_required("customer", "merchant"))],
 )
 async def read_messages(
     chat_id: UUID, msg_svc: MessageService = Depends(get_message_service)
 ):
-    return [MessageOut.model_validate(m).model_dump() for m in await msg_svc.get_messages_for_chat(chat_id)]
-
+    return [
+        MessageOut.model_validate(m).model_dump()
+        for m in await msg_svc.get_messages_for_chat(chat_id)
+    ]
 
 
 # ---- WebSocket for live two‐way chat ----
+
 
 class ConnectionManager:
     def __init__(self):

@@ -4,6 +4,7 @@ from app.core.config import settings
 
 supabase_client = SupabaseClient().client
 
+
 @pytest.fixture(scope="session")
 def supabase_auth_token():
     """

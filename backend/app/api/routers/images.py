@@ -1,5 +1,5 @@
-from __future__ import annotations
 from typing import Any
+from datetime import datetime
 from uuid import UUID
 from fastapi import APIRouter, Depends, File, UploadFile, status, HTTPException
 from fastapi.responses import FileResponse
@@ -9,14 +9,16 @@ from dependencies import DBSessionDep
 from services.image_service import get_image_service, ImageService
 from services.scan_service import get_scan_service
 
+
 # ---------- Pydantic I/O ---------- #
 class ImageRead(BaseModel):
     id: UUID
     user_id: UUID
     file_name: str
+    file_path: str
     mime_type: str
     size: int
-    created_at: str
+    created_at: datetime
 
     model_config = {"from_attributes": True}
 

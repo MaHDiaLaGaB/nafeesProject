@@ -1,6 +1,3 @@
-# app/crud/image_crud.py
-from __future__ import annotations
-
 import os
 import datetime as dt
 from typing import List, Optional

@@ -1,4 +1,3 @@
-from __future__ import annotations
 import os, uuid, pathlib, shutil, datetime as dt
 from typing import Dict, Any
 from uuid import UUID

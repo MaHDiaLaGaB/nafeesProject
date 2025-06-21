@@ -1,6 +1,4 @@
 # app/main.py
-from __future__ import annotations
-
 import threading
 import uvicorn
 import os
@@ -24,6 +22,7 @@ logger = get_logger(__name__)
 # ------------------------------------------------------------------
 env_path = Path(__file__).resolve().parent.parent / ".env"
 load_dotenv(env_path, override=True)
+
 
 @asynccontextmanager
 async def lifespan(app):
@@ -50,23 +49,21 @@ async def lifespan(app):
         logger.info("Shutdown complete.")
 
 
-
 # ------------------------------------------------------------------
 # 3) FastAPI Application
 # ------------------------------------------------------------------
 app = FastAPI(
     title="Gem Classifier & Chat",
     version="1.0.0",
-    docs_url="/docs",           # يمكن تخصيص مسار التوثيق
+    docs_url="/docs",  # يمكن تخصيص مسار التوثيق
     redoc_url=None,
-    lifespan=lifespan)
+    lifespan=lifespan,
+)
 
 # ------------------------------------------------------------------
 # 4) CORS (عدِّله في الإنتاج)
 # ------------------------------------------------------------------
-ALLOWED_ORIGINS = [
-    "*"
-]
+ALLOWED_ORIGINS = ["*"]
 
 app.add_middleware(
     CORSMiddleware,
@@ -75,7 +72,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-    
+
 # ------------------------------------------------------------------
 # 6) Routers
 # ------------------------------------------------------------------

@@ -14,10 +14,12 @@ class Chat(Base):
     merchant_id = Column(UUID(as_uuid=True), ForeignKey("users.id"), nullable=False)
     created_at = Column(DateTime, default=datetime.utcnow)
 
-    customer = relationship("User", back_populates="conversations_as_customer", foreign_keys=[customer_id])
-    merchant = relationship("User", back_populates="conversations_as_merchant", foreign_keys=[merchant_id])
+    customer = relationship(
+        "User", back_populates="conversations_as_customer", foreign_keys=[customer_id]
+    )
+    merchant = relationship(
+        "User", back_populates="conversations_as_merchant", foreign_keys=[merchant_id]
+    )
     messages = relationship(
-    "Message",
-    back_populates="conversation",    # ← was "chat"
-    cascade="all, delete"
-)
+        "Message", back_populates="conversation", cascade="all, delete"  # ← was "chat"
+    )

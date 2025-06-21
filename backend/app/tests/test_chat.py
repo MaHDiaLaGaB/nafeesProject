@@ -5,7 +5,7 @@ from fastapi import HTTPException
 from fastapi.testclient import TestClient
 
 # adjust these imports to match your project structure:
-from app.main import app  
+from app.main import app
 from app.services.chat_service import get_chat_service
 from app.services.message_service import get_message_service
 from app.dependencies.deps import CurrentUser
@@ -13,16 +13,18 @@ from app.dependencies.deps import CurrentUser
 # --- Stub models / services ----------------------------------------------
 
 # fixed UUIDs for consistency
-TEST_CHAT_ID     = uuid.UUID("aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa")
+TEST_CHAT_ID = uuid.UUID("aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa")
 TEST_CUSTOMER_ID = uuid.UUID("bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb")
 TEST_MERCHANT_ID = uuid.UUID("cccccccc-cccc-cccc-cccc-cccccccccccc")
-TEST_MSG_ID      = uuid.UUID("dddddddd-dddd-dddd-dddd-dddddddddddd")
+TEST_MSG_ID = uuid.UUID("dddddddd-dddd-dddd-dddd-dddddddddddd")
+
 
 class DummyChat:
     def __init__(self, id, customer_id, merchant_id):
         self.id = id
         self.customer_id = customer_id
         self.merchant_id = merchant_id
+
 
 class DummyMessage:
     def __init__(self, id, conversation_id, sender_id, content, image_url=None):
@@ -31,6 +33,7 @@ class DummyMessage:
         self.sender_id = sender_id
         self.content = content
         self.image_url = image_url
+
 
 class StubChatService:
     async def create_chat(self, customer_id, merchant_id):
@@ -52,6 +55,7 @@ class StubChatService:
             raise HTTPException(status_code=404)
         # no-op
 
+
 class StubMessageService:
     async def send_message(self, data):
         return DummyMessage(
@@ -70,7 +74,9 @@ class StubMessageService:
 
     async def get_message_by_id(self, msg_id):
         if msg_id == TEST_MSG_ID:
-            return DummyMessage(TEST_MSG_ID, TEST_CHAT_ID, TEST_CUSTOMER_ID, "hello world")
+            return DummyMessage(
+                TEST_MSG_ID, TEST_CHAT_ID, TEST_CUSTOMER_ID, "hello world"
+            )
         return None
 
     async def delete_message(self, msg_id):
@@ -78,26 +84,36 @@ class StubMessageService:
             raise HTTPException(status_code=404)
         # no-op
 
+
 class DummyUser:
     def __init__(self, id, role):
         self.id = id
         self.role = role
 
+
 # --- Fixtures & dependency overrides ------------------------------------
+
 
 @pytest.fixture(autouse=True)
 def override_dependencies(monkeypatch):
     # stub out ChatService & MessageService
-    monkeypatch.setattr(get_chat_service, "__wrapped__", lambda db=None: StubChatService())
-    monkeypatch.setattr(get_message_service, "__wrapped__", lambda db=None: StubMessageService())
+    monkeypatch.setattr(
+        get_chat_service, "__wrapped__", lambda db=None: StubChatService()
+    )
+    monkeypatch.setattr(
+        get_message_service, "__wrapped__", lambda db=None: StubMessageService()
+    )
 
     # stub out current user as customer
-    monkeypatch.setattr(CurrentUser, "__call__", lambda self: DummyUser(TEST_CUSTOMER_ID, "customer"))
+    monkeypatch.setattr(
+        CurrentUser, "__call__", lambda self: DummyUser(TEST_CUSTOMER_ID, "customer")
+    )
 
     # if you have role_required dependency factory, you can disable it:
     # e.g. monkeypatch.setattr("dependencies.auth.role_required", lambda *roles: lambda: None)
 
     yield
+
 
 @pytest.fixture
 def client():
@@ -105,6 +121,7 @@ def client():
 
 
 # --- Tests ----------------------------------------------------------------
+
 
 def test_create_chat(client, supabase_auth_token):
     payload = {

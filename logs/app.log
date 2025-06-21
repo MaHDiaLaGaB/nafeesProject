@@ -1,0 +1,459 @@
+2025-06-21 12:46:13 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 12:46:15 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 12:46:16 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 12:46:16 INFO     Nafees:supabase_client.py:the user is True
+2025-06-21 12:46:16 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 12:46:16 INFO     Nafees:supabase_client.py:✅  Superadmin already exists.
+2025-06-21 12:46:16 INFO     Nafees:supabase_client.py:token:eyJhbGciOiJIUzI1NiIsImtpZCI6IlBlZk9hVXRUNUtlRlI1WmwiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL29xd2h1aG9xY3JkZmxya25kY3RiLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIwOThhZDc1NC03MjhjLTRlNmItOTkzYi1kYzcyZjkzZGQyMjciLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzUwNTA2Mzc2LCJpYXQiOjE3NTA1MDI3NzYsImVtYWlsIjoic3VwZXJhZG1pbkB0ZXN0LmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJTdXBlckFkbWluIiwicm9sZSI6InN1cGVyYWRtaW4ifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc1MDUwMjc3Nn1dLCJzZXNzaW9uX2lkIjoiY2MwNzJjYjctNTQ2MC00MzVmLTg4NjAtZWQ5ZDI0YzQ5OGUyIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.0MgaeLGceA-tQZC5ludmm69nnJnOPNhFR3gJQ01J9fY
+2025-06-21 13:04:28 INFO     Nafees:main.py:Checking active threads during shutdown...
+2025-06-21 13:04:28 INFO     Nafees:main.py:Thread still running: MainThread
+2025-06-21 13:04:28 INFO     Nafees:main.py:Thread still running: asyncio_0
+2025-06-21 13:04:28 INFO     Nafees:main.py:Shutdown complete.
+2025-06-21 13:04:30 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 13:04:32 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 13:04:33 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 13:04:33 INFO     Nafees:supabase_client.py:the user is True
+2025-06-21 13:04:33 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 13:04:33 INFO     Nafees:supabase_client.py:✅  Superadmin already exists.
+2025-06-21 13:04:33 INFO     Nafees:supabase_client.py:token:eyJhbGciOiJIUzI1NiIsImtpZCI6IlBlZk9hVXRUNUtlRlI1WmwiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL29xd2h1aG9xY3JkZmxya25kY3RiLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIwOThhZDc1NC03MjhjLTRlNmItOTkzYi1kYzcyZjkzZGQyMjciLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzUwNTA3NDczLCJpYXQiOjE3NTA1MDM4NzMsImVtYWlsIjoic3VwZXJhZG1pbkB0ZXN0LmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJTdXBlckFkbWluIiwicm9sZSI6InN1cGVyYWRtaW4ifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc1MDUwMzg3M31dLCJzZXNzaW9uX2lkIjoiNzRkZGI2NjAtYzU5MS00NmZlLTlhNDgtODgxNjE3ZTFjM2JjIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.T43ZT-h02JJH-TqJgMDnqRByDjd-NDJj1zZveEhMZXE
+2025-06-21 13:05:18 INFO     Nafees:main.py:Checking active threads during shutdown...
+2025-06-21 13:05:18 INFO     Nafees:main.py:Thread still running: MainThread
+2025-06-21 13:05:18 INFO     Nafees:main.py:Thread still running: asyncio_0
+2025-06-21 13:05:18 INFO     Nafees:main.py:Shutdown complete.
+2025-06-21 13:05:19 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 13:05:21 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 13:05:21 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 13:05:21 INFO     Nafees:supabase_client.py:the user is True
+2025-06-21 13:05:21 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 13:05:21 INFO     Nafees:supabase_client.py:✅  Superadmin already exists.
+2025-06-21 13:05:22 INFO     Nafees:supabase_client.py:token:eyJhbGciOiJIUzI1NiIsImtpZCI6IlBlZk9hVXRUNUtlRlI1WmwiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL29xd2h1aG9xY3JkZmxya25kY3RiLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIwOThhZDc1NC03MjhjLTRlNmItOTkzYi1kYzcyZjkzZGQyMjciLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzUwNTA3NTIyLCJpYXQiOjE3NTA1MDM5MjIsImVtYWlsIjoic3VwZXJhZG1pbkB0ZXN0LmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJTdXBlckFkbWluIiwicm9sZSI6InN1cGVyYWRtaW4ifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc1MDUwMzkyMn1dLCJzZXNzaW9uX2lkIjoiMzNiZmJkZGYtMDMwMy00ZDg1LTllMTctOWZmZTRkM2FmMGE5IiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.fw32SaB-VpQ9Q6dSz68vMmqJ7O6mv6OkGQ3AbiqYlNo
+2025-06-21 13:05:33 INFO     Nafees:main.py:Checking active threads during shutdown...
+2025-06-21 13:05:33 INFO     Nafees:main.py:Thread still running: MainThread
+2025-06-21 13:05:33 INFO     Nafees:main.py:Thread still running: asyncio_0
+2025-06-21 13:05:33 INFO     Nafees:main.py:Shutdown complete.
+2025-06-21 13:05:34 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 13:05:36 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 13:05:36 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 13:05:36 INFO     Nafees:supabase_client.py:the user is True
+2025-06-21 13:05:36 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 13:05:36 INFO     Nafees:supabase_client.py:✅  Superadmin already exists.
+2025-06-21 13:05:36 INFO     Nafees:supabase_client.py:token:eyJhbGciOiJIUzI1NiIsImtpZCI6IlBlZk9hVXRUNUtlRlI1WmwiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL29xd2h1aG9xY3JkZmxya25kY3RiLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIwOThhZDc1NC03MjhjLTRlNmItOTkzYi1kYzcyZjkzZGQyMjciLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzUwNTA3NTM2LCJpYXQiOjE3NTA1MDM5MzYsImVtYWlsIjoic3VwZXJhZG1pbkB0ZXN0LmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJTdXBlckFkbWluIiwicm9sZSI6InN1cGVyYWRtaW4ifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc1MDUwMzkzNn1dLCJzZXNzaW9uX2lkIjoiMDZiMzljYzktNjc4My00NTkxLWEyNDItNzk3NGQ4YjBmOGE0IiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.DAyVxGSntoa1mdSadO4BwQIfMu9UuOZ4-6K3JmxA1GA
+2025-06-21 13:05:59 ERROR    Nafees:base_crud.py:SQLAlchemyError in create: Mapper 'Mapper[User(users)]' has no property 'images'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2025-06-21 13:07:13 INFO     Nafees:main.py:Checking active threads during shutdown...
+2025-06-21 13:07:13 INFO     Nafees:main.py:Thread still running: MainThread
+2025-06-21 13:07:13 INFO     Nafees:main.py:Thread still running: asyncio_0
+2025-06-21 13:07:13 INFO     Nafees:main.py:Thread still running: AnyIO worker thread
+2025-06-21 13:07:13 INFO     Nafees:main.py:Shutdown complete.
+2025-06-21 13:07:15 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 13:07:16 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 13:07:17 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 13:07:17 INFO     Nafees:supabase_client.py:the user is True
+2025-06-21 13:07:17 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 13:07:17 INFO     Nafees:supabase_client.py:✅  Superadmin already exists.
+2025-06-21 13:07:17 INFO     Nafees:supabase_client.py:token:eyJhbGciOiJIUzI1NiIsImtpZCI6IlBlZk9hVXRUNUtlRlI1WmwiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL29xd2h1aG9xY3JkZmxya25kY3RiLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIwOThhZDc1NC03MjhjLTRlNmItOTkzYi1kYzcyZjkzZGQyMjciLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzUwNTA3NjM3LCJpYXQiOjE3NTA1MDQwMzcsImVtYWlsIjoic3VwZXJhZG1pbkB0ZXN0LmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJTdXBlckFkbWluIiwicm9sZSI6InN1cGVyYWRtaW4ifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc1MDUwNDAzN31dLCJzZXNzaW9uX2lkIjoiMDE1N2VmM2UtY2Y1MS00NmU0LTg1ZTgtZmU3OTM1OGRlNDVjIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.8kVwsTQ5xRC8W5tSm4KyJBpbGfkFmlKu_oC7BnxUjTg
+2025-06-21 13:08:10 ERROR    Nafees:base_crud.py:SQLAlchemyError in create: Mapper 'Mapper[User(users)]' has no property 'images'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2025-06-21 13:10:53 INFO     Nafees:main.py:Checking active threads during shutdown...
+2025-06-21 13:10:53 INFO     Nafees:main.py:Thread still running: MainThread
+2025-06-21 13:10:53 INFO     Nafees:main.py:Thread still running: asyncio_0
+2025-06-21 13:10:53 INFO     Nafees:main.py:Thread still running: AnyIO worker thread
+2025-06-21 13:10:53 INFO     Nafees:main.py:Shutdown complete.
+2025-06-21 13:10:55 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 13:11:57 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 13:11:59 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 13:11:59 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 13:11:59 INFO     Nafees:supabase_client.py:the user is True
+2025-06-21 13:11:59 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 13:11:59 INFO     Nafees:supabase_client.py:✅  Superadmin already exists.
+2025-06-21 13:12:00 INFO     Nafees:supabase_client.py:token:eyJhbGciOiJIUzI1NiIsImtpZCI6IlBlZk9hVXRUNUtlRlI1WmwiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL29xd2h1aG9xY3JkZmxya25kY3RiLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIwOThhZDc1NC03MjhjLTRlNmItOTkzYi1kYzcyZjkzZGQyMjciLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzUwNTA3OTIwLCJpYXQiOjE3NTA1MDQzMjAsImVtYWlsIjoic3VwZXJhZG1pbkB0ZXN0LmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJTdXBlckFkbWluIiwicm9sZSI6InN1cGVyYWRtaW4ifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc1MDUwNDMyMH1dLCJzZXNzaW9uX2lkIjoiNGYzYTE1ZDEtMjFhZC00MDIyLTljN2QtYTNkOTViYTUwNWJjIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.B5GvEodDCx6JvtKscmjTHKjDt8ff9zkR0NSvzkvSZX4
+2025-06-21 13:12:26 ERROR    Nafees:base_crud.py:SQLAlchemyError in create: (psycopg2.errors.UndefinedColumn) column "is_active" of relation "users" does not exist
+LINE 1: INSERT INTO users (id, email, name, role, is_active, is_veri...
+                                                  ^
+
+[SQL: INSERT INTO users (id, email, name, role, is_active, is_verified, is_superadmin, is_merchant, is_customer, created_at) VALUES (%(id)s::UUID, %(email)s, %(name)s, %(role)s, %(is_active)s, %(is_verified)s, %(is_superadmin)s, %(is_merchant)s, %(is_customer)s, %(created_at)s)]
+[parameters: {'id': UUID('ce032ebd-08be-4a9a-ba2b-4340aff76a6b'), 'email': 'test@test.com', 'name': 'test2', 'role': 'customer', 'is_active': True, 'is_verified': True, 'is_superadmin': False, 'is_merchant': False, 'is_customer': True, 'created_at': datetime.datetime(2025, 6, 21, 11, 12, 26, 97710)}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-06-21 14:54:27 INFO     Nafees:main.py:Checking active threads during shutdown...
+2025-06-21 14:54:27 INFO     Nafees:main.py:Thread still running: MainThread
+2025-06-21 14:54:27 INFO     Nafees:main.py:Thread still running: asyncio_0
+2025-06-21 14:54:27 INFO     Nafees:main.py:Thread still running: AnyIO worker thread
+2025-06-21 14:54:27 INFO     Nafees:main.py:Shutdown complete.
+2025-06-21 14:54:29 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 14:54:31 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 14:54:31 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 14:54:31 INFO     Nafees:supabase_client.py:the user is True
+2025-06-21 14:54:31 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 14:54:31 INFO     Nafees:supabase_client.py:✅  Superadmin already exists.
+2025-06-21 14:54:32 INFO     Nafees:supabase_client.py:token:eyJhbGciOiJIUzI1NiIsImtpZCI6IlBlZk9hVXRUNUtlRlI1WmwiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL29xd2h1aG9xY3JkZmxya25kY3RiLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIwOThhZDc1NC03MjhjLTRlNmItOTkzYi1kYzcyZjkzZGQyMjciLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzUwNTE0MDcyLCJpYXQiOjE3NTA1MTA0NzIsImVtYWlsIjoic3VwZXJhZG1pbkB0ZXN0LmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJTdXBlckFkbWluIiwicm9sZSI6InN1cGVyYWRtaW4ifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc1MDUxMDQ3Mn1dLCJzZXNzaW9uX2lkIjoiZWExYzcyZGYtNzI1MS00MTkyLWJiZDgtYjBiMWZjMTYxYzJjIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.H4erTwxWuT1fn-2ZzuodjsAgNAUQBfflg9ZMSXwFSp0
+2025-06-21 14:57:45 INFO     Nafees:main.py:Checking active threads during shutdown...
+2025-06-21 14:57:45 INFO     Nafees:main.py:Thread still running: MainThread
+2025-06-21 14:57:45 INFO     Nafees:main.py:Thread still running: asyncio_0
+2025-06-21 14:57:45 INFO     Nafees:main.py:Thread still running: AnyIO worker thread
+2025-06-21 14:57:45 INFO     Nafees:main.py:Shutdown complete.
+2025-06-21 14:57:47 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 14:57:49 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 14:57:49 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 14:57:49 INFO     Nafees:supabase_client.py:the user is True
+2025-06-21 14:57:49 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 14:57:49 INFO     Nafees:supabase_client.py:✅  Superadmin already exists.
+2025-06-21 14:57:49 INFO     Nafees:supabase_client.py:token:eyJhbGciOiJIUzI1NiIsImtpZCI6IlBlZk9hVXRUNUtlRlI1WmwiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL29xd2h1aG9xY3JkZmxya25kY3RiLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIwOThhZDc1NC03MjhjLTRlNmItOTkzYi1kYzcyZjkzZGQyMjciLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzUwNTE0MjY5LCJpYXQiOjE3NTA1MTA2NjksImVtYWlsIjoic3VwZXJhZG1pbkB0ZXN0LmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJTdXBlckFkbWluIiwicm9sZSI6InN1cGVyYWRtaW4ifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc1MDUxMDY2OX1dLCJzZXNzaW9uX2lkIjoiZWI0MDdjMjEtOWE0My00Y2JhLWE1MGQtODAwZDE3YzEyODVkIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.7Qd20pUJKjed57h-ma72MTTjuZ8Kqi8WqpEMbpD6Cy4
+2025-06-21 15:00:55 INFO     Nafees:main.py:Checking active threads during shutdown...
+2025-06-21 15:00:55 INFO     Nafees:main.py:Thread still running: MainThread
+2025-06-21 15:00:55 INFO     Nafees:main.py:Thread still running: asyncio_0
+2025-06-21 15:00:55 INFO     Nafees:main.py:Thread still running: AnyIO worker thread
+2025-06-21 15:00:55 INFO     Nafees:main.py:Shutdown complete.
+2025-06-21 15:00:57 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 15:00:59 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 15:00:59 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 15:00:59 INFO     Nafees:supabase_client.py:the user is True
+2025-06-21 15:00:59 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 15:00:59 INFO     Nafees:supabase_client.py:✅  Superadmin already exists.
+2025-06-21 15:01:00 INFO     Nafees:supabase_client.py:token:eyJhbGciOiJIUzI1NiIsImtpZCI6IlBlZk9hVXRUNUtlRlI1WmwiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL29xd2h1aG9xY3JkZmxya25kY3RiLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIwOThhZDc1NC03MjhjLTRlNmItOTkzYi1kYzcyZjkzZGQyMjciLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzUwNTE0NDYwLCJpYXQiOjE3NTA1MTA4NjAsImVtYWlsIjoic3VwZXJhZG1pbkB0ZXN0LmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJTdXBlckFkbWluIiwicm9sZSI6InN1cGVyYWRtaW4ifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc1MDUxMDg2MH1dLCJzZXNzaW9uX2lkIjoiNmJhNzFkNDQtZTkyYy00ZWQ1LTg0NDctY2JiYzBkM2ZlN2Q3IiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.5Pe8gT024S4j0J5GaauGkZOhpojGM6LNRNc7qBjQKYM
+2025-06-21 15:59:32 ERROR    Nafees:base_crud.py:SQLAlchemyError in get_by_id: (psycopg2.OperationalError) server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+[SQL: SELECT uploaded_images.id AS uploaded_images_id, uploaded_images.user_id AS uploaded_images_user_id, uploaded_images.file_name AS uploaded_images_file_name, uploaded_images.file_path AS uploaded_images_file_path, uploaded_images.mime_type AS uploaded_images_mime_type, uploaded_images.size AS uploaded_images_size, uploaded_images.created_at AS uploaded_images_created_at 
+FROM uploaded_images 
+WHERE uploaded_images.id = %(id_1)s::UUID 
+ LIMIT %(param_1)s]
+[parameters: {'id_1': UUID('3ca21ac4-3582-489f-9293-4ec24b35e89d'), 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-06-21 16:16:23 INFO     Nafees:main.py:Checking active threads during shutdown...
+2025-06-21 16:16:23 INFO     Nafees:main.py:Thread still running: MainThread
+2025-06-21 16:16:23 INFO     Nafees:main.py:Thread still running: asyncio_0
+2025-06-21 16:16:23 INFO     Nafees:main.py:Thread still running: AnyIO worker thread
+2025-06-21 16:16:23 INFO     Nafees:main.py:Shutdown complete.
+2025-06-21 20:53:31 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 20:54:30 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 20:54:30 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 20:54:31 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 20:54:31 INFO     Nafees:supabase_client.py:the user is True
+2025-06-21 20:54:31 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 20:54:31 INFO     Nafees:supabase_client.py:✅  Superadmin already exists.
+2025-06-21 20:54:31 INFO     Nafees:supabase_client.py:token:eyJhbGciOiJIUzI1NiIsImtpZCI6IlBlZk9hVXRUNUtlRlI1WmwiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL29xd2h1aG9xY3JkZmxya25kY3RiLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIwOThhZDc1NC03MjhjLTRlNmItOTkzYi1kYzcyZjkzZGQyMjciLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzUwNTM1NjcxLCJpYXQiOjE3NTA1MzIwNzEsImVtYWlsIjoic3VwZXJhZG1pbkB0ZXN0LmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJTdXBlckFkbWluIiwicm9sZSI6InN1cGVyYWRtaW4ifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc1MDUzMjA3MX1dLCJzZXNzaW9uX2lkIjoiODQxN2ZiOTQtNDAwNy00Yzc4LTk1NWEtYjUwNGU3OWVmN2I5IiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.dRnkLwl5bZ0dGEPCW2KHWMotvO-jT1IqyWbEBOSrjlQ
+2025-06-21 20:55:13 INFO     Nafees:main.py:Checking active threads during shutdown...
+2025-06-21 20:55:13 INFO     Nafees:main.py:Thread still running: MainThread
+2025-06-21 20:55:13 INFO     Nafees:main.py:Thread still running: asyncio_0
+2025-06-21 20:55:13 INFO     Nafees:main.py:Shutdown complete.
+2025-06-21 20:55:14 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 20:55:14 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 20:55:14 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 20:55:14 INFO     Nafees:supabase_client.py:the user is True
+2025-06-21 20:55:15 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 20:55:15 INFO     Nafees:supabase_client.py:✅  Superadmin already exists.
+2025-06-21 20:55:15 INFO     Nafees:supabase_client.py:token:eyJhbGciOiJIUzI1NiIsImtpZCI6IlBlZk9hVXRUNUtlRlI1WmwiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL29xd2h1aG9xY3JkZmxya25kY3RiLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIwOThhZDc1NC03MjhjLTRlNmItOTkzYi1kYzcyZjkzZGQyMjciLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzUwNTM1NzE1LCJpYXQiOjE3NTA1MzIxMTUsImVtYWlsIjoic3VwZXJhZG1pbkB0ZXN0LmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJTdXBlckFkbWluIiwicm9sZSI6InN1cGVyYWRtaW4ifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc1MDUzMjExNX1dLCJzZXNzaW9uX2lkIjoiYzU2MWJlOTUtMmY1NS00YmM0LWFlNDQtYWNjNmU0OGRhN2U0IiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.kYY9vmIVrP2AJ3oTDQ8oUmdfw-183ekOZ4rkZch4vOs
+2025-06-21 20:56:53 INFO     Nafees:main.py:Checking active threads during shutdown...
+2025-06-21 20:56:53 INFO     Nafees:main.py:Thread still running: MainThread
+2025-06-21 20:56:53 INFO     Nafees:main.py:Thread still running: asyncio_0
+2025-06-21 20:56:53 INFO     Nafees:main.py:Shutdown complete.
+2025-06-21 20:56:54 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 20:56:54 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 20:56:54 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 20:56:54 INFO     Nafees:supabase_client.py:the user is True
+2025-06-21 20:56:55 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 20:56:55 INFO     Nafees:supabase_client.py:✅  Superadmin already exists.
+2025-06-21 20:56:55 INFO     Nafees:supabase_client.py:token:eyJhbGciOiJIUzI1NiIsImtpZCI6IlBlZk9hVXRUNUtlRlI1WmwiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL29xd2h1aG9xY3JkZmxya25kY3RiLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIwOThhZDc1NC03MjhjLTRlNmItOTkzYi1kYzcyZjkzZGQyMjciLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzUwNTM1ODE1LCJpYXQiOjE3NTA1MzIyMTUsImVtYWlsIjoic3VwZXJhZG1pbkB0ZXN0LmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJTdXBlckFkbWluIiwicm9sZSI6InN1cGVyYWRtaW4ifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc1MDUzMjIxNX1dLCJzZXNzaW9uX2lkIjoiNWNlMGYzODYtN2M0NC00ZTllLTlkNzgtY2I0MGZmM2I5YmY1IiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.xEAfGSVxA9nQab-OIZ8yQWZPuygZr0vClnBHFon6xNQ
+2025-06-21 20:57:46 INFO     Nafees:auth.py:the credentials scheme='Bearer' credentials='eyJhbGciOiJIUzI1NiIsImtpZCI6IlBlZk9hVXRUNUtlRlI1WmwiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL29xd2h1aG9xY3JkZmxya25kY3RiLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIwOThhZDc1NC03MjhjLTRlNmItOTkzYi1kYzcyZjkzZGQyMjciLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzUwNTM1ODE1LCJpYXQiOjE3NTA1MzIyMTUsImVtYWlsIjoic3VwZXJhZG1pbkB0ZXN0LmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJTdXBlckFkbWluIiwicm9sZSI6InN1cGVyYWRtaW4ifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc1MDUzMjIxNX1dLCJzZXNzaW9uX2lkIjoiNWNlMGYzODYtN2M0NC00ZTllLTlkNzgtY2I0MGZmM2I5YmY1IiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.xEAfGSVxA9nQab-OIZ8yQWZPuygZr0vClnBHFon6xNQ'
+2025-06-21 20:57:47 INFO     Nafees:auth.py:the user info {'id': '098ad754-728c-4e6b-993b-dc72f93dd227', 'app_metadata': {'provider': 'email', 'providers': ['email']}, 'user_metadata': {'email_verified': True, 'name': 'SuperAdmin', 'role': 'superadmin'}, 'aud': 'authenticated', 'confirmation_sent_at': None, 'recovery_sent_at': None, 'email_change_sent_at': None, 'new_email': None, 'new_phone': None, 'invited_at': None, 'action_link': None, 'email': 'superadmin@test.com', 'phone': '', 'created_at': datetime.datetime(2025, 6, 16, 9, 25, 1, 647464, tzinfo=TzInfo(UTC)), 'confirmed_at': datetime.datetime(2025, 6, 16, 9, 25, 1, 663295, tzinfo=TzInfo(UTC)), 'email_confirmed_at': datetime.datetime(2025, 6, 16, 9, 25, 1, 663295, tzinfo=TzInfo(UTC)), 'phone_confirmed_at': None, 'last_sign_in_at': datetime.datetime(2025, 6, 21, 18, 56, 55, 349278, tzinfo=TzInfo(UTC)), 'role': 'authenticated', 'updated_at': datetime.datetime(2025, 6, 21, 18, 56, 55, 351767, tzinfo=TzInfo(UTC)), 'identities': [{'id': '098ad754-728c-4e6b-993b-dc72f93dd227', 'identity_id': '2481353f-0f52-4d52-a97d-7e83b37131c6', 'user_id': '098ad754-728c-4e6b-993b-dc72f93dd227', 'identity_data': {'email': 'superadmin@test.com', 'email_verified': False, 'phone_verified': False, 'sub': '098ad754-728c-4e6b-993b-dc72f93dd227'}, 'provider': 'email', 'created_at': datetime.datetime(2025, 6, 16, 9, 25, 1, 655117, tzinfo=TzInfo(UTC)), 'last_sign_in_at': datetime.datetime(2025, 6, 16, 9, 25, 1, 655052, tzinfo=TzInfo(UTC)), 'updated_at': datetime.datetime(2025, 6, 16, 9, 25, 1, 655117, tzinfo=TzInfo(UTC))}], 'is_anonymous': False, 'factors': None}, <class 'dict'>
+2025-06-21 21:03:48 INFO     Nafees:main.py:Checking active threads during shutdown...
+2025-06-21 21:03:48 INFO     Nafees:main.py:Thread still running: MainThread
+2025-06-21 21:03:48 INFO     Nafees:main.py:Thread still running: asyncio_0
+2025-06-21 21:03:48 INFO     Nafees:main.py:Thread still running: AnyIO worker thread
+2025-06-21 21:03:48 INFO     Nafees:main.py:Shutdown complete.
+2025-06-21 21:03:50 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 21:03:50 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 21:03:50 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 21:03:50 INFO     Nafees:supabase_client.py:the user is True
+2025-06-21 21:03:51 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 21:03:51 INFO     Nafees:supabase_client.py:✅  Superadmin already exists.
+2025-06-21 21:03:51 INFO     Nafees:supabase_client.py:token:eyJhbGciOiJIUzI1NiIsImtpZCI6IlBlZk9hVXRUNUtlRlI1WmwiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL29xd2h1aG9xY3JkZmxya25kY3RiLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIwOThhZDc1NC03MjhjLTRlNmItOTkzYi1kYzcyZjkzZGQyMjciLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzUwNTM2MjMxLCJpYXQiOjE3NTA1MzI2MzEsImVtYWlsIjoic3VwZXJhZG1pbkB0ZXN0LmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJTdXBlckFkbWluIiwicm9sZSI6InN1cGVyYWRtaW4ifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc1MDUzMjYzMX1dLCJzZXNzaW9uX2lkIjoiMjAwYTA4ZTctZjhmNS00MTNiLTg0M2YtNmNkNjM2MzNkYWU4IiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.nodlf9hbV_MKPI6qD25bMnXem2tMEiVuXioxN2tepb0
+2025-06-21 21:04:19 INFO     Nafees:auth.py:the credentials scheme='Bearer' credentials='eyJhbGciOiJIUzI1NiIsImtpZCI6IlBlZk9hVXRUNUtlRlI1WmwiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL29xd2h1aG9xY3JkZmxya25kY3RiLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIwOThhZDc1NC03MjhjLTRlNmItOTkzYi1kYzcyZjkzZGQyMjciLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzUwNTM2MjMxLCJpYXQiOjE3NTA1MzI2MzEsImVtYWlsIjoic3VwZXJhZG1pbkB0ZXN0LmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJTdXBlckFkbWluIiwicm9sZSI6InN1cGVyYWRtaW4ifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc1MDUzMjYzMX1dLCJzZXNzaW9uX2lkIjoiMjAwYTA4ZTctZjhmNS00MTNiLTg0M2YtNmNkNjM2MzNkYWU4IiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.nodlf9hbV_MKPI6qD25bMnXem2tMEiVuXioxN2tepb0'
+2025-06-21 21:04:19 INFO     Nafees:auth.py:the user info {'id': '098ad754-728c-4e6b-993b-dc72f93dd227', 'app_metadata': {'provider': 'email', 'providers': ['email']}, 'user_metadata': {'email_verified': True, 'name': 'SuperAdmin', 'role': 'superadmin'}, 'aud': 'authenticated', 'confirmation_sent_at': None, 'recovery_sent_at': None, 'email_change_sent_at': None, 'new_email': None, 'new_phone': None, 'invited_at': None, 'action_link': None, 'email': 'superadmin@test.com', 'phone': '', 'created_at': datetime.datetime(2025, 6, 16, 9, 25, 1, 647464, tzinfo=TzInfo(UTC)), 'confirmed_at': datetime.datetime(2025, 6, 16, 9, 25, 1, 663295, tzinfo=TzInfo(UTC)), 'email_confirmed_at': datetime.datetime(2025, 6, 16, 9, 25, 1, 663295, tzinfo=TzInfo(UTC)), 'phone_confirmed_at': None, 'last_sign_in_at': datetime.datetime(2025, 6, 21, 19, 3, 51, 350853, tzinfo=TzInfo(UTC)), 'role': 'authenticated', 'updated_at': datetime.datetime(2025, 6, 21, 19, 3, 51, 358495, tzinfo=TzInfo(UTC)), 'identities': [{'id': '098ad754-728c-4e6b-993b-dc72f93dd227', 'identity_id': '2481353f-0f52-4d52-a97d-7e83b37131c6', 'user_id': '098ad754-728c-4e6b-993b-dc72f93dd227', 'identity_data': {'email': 'superadmin@test.com', 'email_verified': False, 'phone_verified': False, 'sub': '098ad754-728c-4e6b-993b-dc72f93dd227'}, 'provider': 'email', 'created_at': datetime.datetime(2025, 6, 16, 9, 25, 1, 655117, tzinfo=TzInfo(UTC)), 'last_sign_in_at': datetime.datetime(2025, 6, 16, 9, 25, 1, 655052, tzinfo=TzInfo(UTC)), 'updated_at': datetime.datetime(2025, 6, 16, 9, 25, 1, 655117, tzinfo=TzInfo(UTC))}], 'is_anonymous': False, 'factors': None}, <class 'dict'>
+2025-06-21 21:04:29 INFO     Nafees:users_service.py:Fetching user with ID: 098ad754-728c-4e6b-993b-dc72f93dd227
+2025-06-21 21:04:29 DEBUG    Nafees:users_service.py:Retrieved user: None
+2025-06-21 21:11:56 ERROR    Nafees:base_crud.py:SQLAlchemyError in get_by_id: (psycopg2.OperationalError) server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+[SQL: SELECT users.id AS users_id, users.email AS users_email, users.name AS users_name, users.role AS users_role, users.is_active AS users_is_active, users.is_verified AS users_is_verified, users.is_superadmin AS users_is_superadmin, users.is_merchant AS users_is_merchant, users.is_customer AS users_is_customer, users.created_at AS users_created_at 
+FROM users 
+WHERE users.id = %(id_1)s::UUID 
+ LIMIT %(param_1)s]
+[parameters: {'id_1': UUID('13cacee8-111a-49db-8886-fd2e5ebeecda'), 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-06-21 21:14:46 INFO     Nafees:main.py:Checking active threads during shutdown...
+2025-06-21 21:14:46 INFO     Nafees:main.py:Thread still running: MainThread
+2025-06-21 21:14:46 INFO     Nafees:main.py:Thread still running: asyncio_0
+2025-06-21 21:14:46 INFO     Nafees:main.py:Thread still running: AnyIO worker thread
+2025-06-21 21:14:46 INFO     Nafees:main.py:Shutdown complete.
+2025-06-21 21:14:49 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 21:17:43 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 21:18:10 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 21:18:10 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 21:18:11 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 21:18:11 INFO     Nafees:supabase_client.py:the user is True
+2025-06-21 21:18:11 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 21:18:11 INFO     Nafees:supabase_client.py:✅  Superadmin already exists.
+2025-06-21 21:18:11 INFO     Nafees:supabase_client.py:token:eyJhbGciOiJIUzI1NiIsImtpZCI6IlBlZk9hVXRUNUtlRlI1WmwiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL29xd2h1aG9xY3JkZmxya25kY3RiLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIwOThhZDc1NC03MjhjLTRlNmItOTkzYi1kYzcyZjkzZGQyMjciLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzUwNTM3MDkxLCJpYXQiOjE3NTA1MzM0OTEsImVtYWlsIjoic3VwZXJhZG1pbkB0ZXN0LmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJTdXBlckFkbWluIiwicm9sZSI6InN1cGVyYWRtaW4ifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc1MDUzMzQ5MX1dLCJzZXNzaW9uX2lkIjoiYmJlYzQ1ODgtYTdhNi00MWYzLThkMWEtNGFhZTU0ZDdhN2UxIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.9pMoQPucLuT3Z6CVn0VXKvO6nx0uA-BLnjscjzSxLPk
+2025-06-21 21:22:13 INFO     Nafees:main.py:Checking active threads during shutdown...
+2025-06-21 21:22:13 INFO     Nafees:main.py:Thread still running: MainThread
+2025-06-21 21:22:13 INFO     Nafees:main.py:Thread still running: asyncio_0
+2025-06-21 21:22:13 INFO     Nafees:main.py:Thread still running: AnyIO worker thread
+2025-06-21 21:22:13 INFO     Nafees:main.py:Shutdown complete.
+2025-06-21 21:22:14 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 21:22:14 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 21:22:15 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 21:22:15 INFO     Nafees:supabase_client.py:the user is True
+2025-06-21 21:22:15 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 21:22:15 INFO     Nafees:supabase_client.py:✅  Superadmin already exists.
+2025-06-21 21:22:15 INFO     Nafees:supabase_client.py:token:eyJhbGciOiJIUzI1NiIsImtpZCI6IlBlZk9hVXRUNUtlRlI1WmwiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL29xd2h1aG9xY3JkZmxya25kY3RiLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIwOThhZDc1NC03MjhjLTRlNmItOTkzYi1kYzcyZjkzZGQyMjciLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzUwNTM3MzM1LCJpYXQiOjE3NTA1MzM3MzUsImVtYWlsIjoic3VwZXJhZG1pbkB0ZXN0LmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJTdXBlckFkbWluIiwicm9sZSI6InN1cGVyYWRtaW4ifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc1MDUzMzczNX1dLCJzZXNzaW9uX2lkIjoiYTE2YzdhZWMtZjQ2Yy00ZTM5LWI2MzUtNmNjMWFiZDRiOTEwIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.1hmZivbDLGLs_sZd-NRGGXnscXLtnm6UIxyDm3UNPEI
+2025-06-21 21:28:35 INFO     Nafees:main.py:Checking active threads during shutdown...
+2025-06-21 21:28:35 INFO     Nafees:main.py:Thread still running: MainThread
+2025-06-21 21:28:35 INFO     Nafees:main.py:Thread still running: asyncio_0
+2025-06-21 21:28:35 INFO     Nafees:main.py:Thread still running: AnyIO worker thread
+2025-06-21 21:28:35 INFO     Nafees:main.py:Shutdown complete.
+2025-06-21 21:28:36 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 21:28:36 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 21:28:37 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 21:28:37 INFO     Nafees:supabase_client.py:the user is True
+2025-06-21 21:28:37 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 21:28:37 INFO     Nafees:supabase_client.py:✅  Superadmin already exists.
+2025-06-21 21:28:37 INFO     Nafees:supabase_client.py:token:eyJhbGciOiJIUzI1NiIsImtpZCI6IlBlZk9hVXRUNUtlRlI1WmwiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL29xd2h1aG9xY3JkZmxya25kY3RiLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIwOThhZDc1NC03MjhjLTRlNmItOTkzYi1kYzcyZjkzZGQyMjciLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzUwNTM3NzE3LCJpYXQiOjE3NTA1MzQxMTcsImVtYWlsIjoic3VwZXJhZG1pbkB0ZXN0LmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJTdXBlckFkbWluIiwicm9sZSI6InN1cGVyYWRtaW4ifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc1MDUzNDExN31dLCJzZXNzaW9uX2lkIjoiOTkyZmRiODEtODRkYy00ODBmLWE5MGQtOWM5MTg5NWYxOGVkIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.E4Uj5skhZtpbamuzKp5JwZgpn7wEebf5_DBzy2u-bSw
+2025-06-21 21:35:03 INFO     Nafees:main.py:Checking active threads during shutdown...
+2025-06-21 21:35:03 INFO     Nafees:main.py:Thread still running: MainThread
+2025-06-21 21:35:03 INFO     Nafees:main.py:Thread still running: asyncio_0
+2025-06-21 21:35:03 INFO     Nafees:main.py:Thread still running: AnyIO worker thread
+2025-06-21 21:35:03 INFO     Nafees:main.py:Shutdown complete.
+2025-06-21 21:35:04 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 21:35:04 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 21:35:05 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 21:35:05 INFO     Nafees:supabase_client.py:the user is True
+2025-06-21 21:35:05 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 21:35:05 INFO     Nafees:supabase_client.py:✅  Superadmin already exists.
+2025-06-21 21:35:05 INFO     Nafees:supabase_client.py:token:eyJhbGciOiJIUzI1NiIsImtpZCI6IlBlZk9hVXRUNUtlRlI1WmwiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL29xd2h1aG9xY3JkZmxya25kY3RiLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIwOThhZDc1NC03MjhjLTRlNmItOTkzYi1kYzcyZjkzZGQyMjciLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzUwNTM4MTA1LCJpYXQiOjE3NTA1MzQ1MDUsImVtYWlsIjoic3VwZXJhZG1pbkB0ZXN0LmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJTdXBlckFkbWluIiwicm9sZSI6InN1cGVyYWRtaW4ifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc1MDUzNDUwNX1dLCJzZXNzaW9uX2lkIjoiNzM1OGU4MjUtMTBjNC00ZWViLTlmZjQtZGNjNjk5YzA1ZTZkIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.5MLB5MHNt0zFjA9-lct2tAmMK_0xO63IEmjH05Rdiac
+2025-06-21 21:35:11 DEBUG    Nafees:scan_service.py:Calling HF inference for user_id=13cacee8-111a-49db-8886-fd2e5ebeecda…
+2025-06-21 21:35:11 ERROR    Nafees:scan_service.py:HF Inference API call failed
+Traceback (most recent call last):
+  File "/Users/madcodex/nafeesProject/nafeesProject/backend/app/services/scan_service.py", line 88, in create_scan
+    result = self.hf_client.image_classification(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/madcodex/Library/Caches/pypoetry/virtualenvs/backend-U52EL10a-py3.12/lib/python3.12/site-packages/huggingface_hub/inference/_client.py", line 1186, in image_classification
+    provider_helper = get_provider_helper(self.provider, task="image-classification", model=model_id)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/madcodex/Library/Caches/pypoetry/virtualenvs/backend-U52EL10a-py3.12/lib/python3.12/site-packages/huggingface_hub/inference/_providers/__init__.py", line 191, in get_provider_helper
+    provider = next(iter(provider_mapping)).provider
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+StopIteration
+2025-06-21 21:37:57 INFO     Nafees:main.py:Checking active threads during shutdown...
+2025-06-21 21:37:57 INFO     Nafees:main.py:Thread still running: MainThread
+2025-06-21 21:37:57 INFO     Nafees:main.py:Thread still running: asyncio_0
+2025-06-21 21:37:57 INFO     Nafees:main.py:Thread still running: AnyIO worker thread
+2025-06-21 21:37:57 INFO     Nafees:main.py:Shutdown complete.
+2025-06-21 21:37:59 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 21:37:59 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 21:38:00 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 21:38:00 INFO     Nafees:supabase_client.py:the user is True
+2025-06-21 21:38:00 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 21:38:00 INFO     Nafees:supabase_client.py:✅  Superadmin already exists.
+2025-06-21 21:38:00 INFO     Nafees:supabase_client.py:token:eyJhbGciOiJIUzI1NiIsImtpZCI6IlBlZk9hVXRUNUtlRlI1WmwiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL29xd2h1aG9xY3JkZmxya25kY3RiLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIwOThhZDc1NC03MjhjLTRlNmItOTkzYi1kYzcyZjkzZGQyMjciLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzUwNTM4MjgwLCJpYXQiOjE3NTA1MzQ2ODAsImVtYWlsIjoic3VwZXJhZG1pbkB0ZXN0LmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJTdXBlckFkbWluIiwicm9sZSI6InN1cGVyYWRtaW4ifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc1MDUzNDY4MH1dLCJzZXNzaW9uX2lkIjoiNzFlNTU3MTQtYTIzNS00ZDE2LWFkMDgtOWUwY2M3MzVjMmEyIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.eLTMrwJxLEEvamwp3vgoD9t0YiJk98bJ8V86YwZfvfs
+2025-06-21 21:38:15 DEBUG    Nafees:scan_service.py:Calling HF inference for user_id=13cacee8-111a-49db-8886-fd2e5ebeecda…
+2025-06-21 21:38:16 ERROR    Nafees:scan_service.py:HF Inference API call failed
+Traceback (most recent call last):
+  File "/Users/madcodex/nafeesProject/nafeesProject/backend/app/services/scan_service.py", line 88, in create_scan
+    result = self.hf_client.image_classification(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/madcodex/Library/Caches/pypoetry/virtualenvs/backend-U52EL10a-py3.12/lib/python3.12/site-packages/huggingface_hub/inference/_client.py", line 1187, in image_classification
+    request_parameters = provider_helper.prepare_request(
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/madcodex/Library/Caches/pypoetry/virtualenvs/backend-U52EL10a-py3.12/lib/python3.12/site-packages/huggingface_hub/inference/_providers/_common.py", line 84, in prepare_request
+    data = self._prepare_payload_as_bytes(inputs, parameters, provider_mapping_info, extra_payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/madcodex/Library/Caches/pypoetry/virtualenvs/backend-U52EL10a-py3.12/lib/python3.12/site-packages/huggingface_hub/inference/_providers/hf_inference.py", line 84, in _prepare_payload_as_bytes
+    raise ValueError(f"Expected binary inputs or a local path or a URL. Got {inputs}")
+ValueError: Expected binary inputs or a local path or a URL. Got <_io.BytesIO object at 0x105eb7ec0>
+2025-06-21 21:39:54 INFO     Nafees:main.py:Checking active threads during shutdown...
+2025-06-21 21:39:54 INFO     Nafees:main.py:Thread still running: MainThread
+2025-06-21 21:39:54 INFO     Nafees:main.py:Thread still running: asyncio_0
+2025-06-21 21:39:54 INFO     Nafees:main.py:Thread still running: AnyIO worker thread
+2025-06-21 21:39:54 INFO     Nafees:main.py:Shutdown complete.
+2025-06-21 21:39:55 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 21:40:04 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 21:40:04 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 21:40:05 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 21:40:05 INFO     Nafees:supabase_client.py:the user is True
+2025-06-21 21:40:05 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 21:40:05 INFO     Nafees:supabase_client.py:✅  Superadmin already exists.
+2025-06-21 21:40:05 INFO     Nafees:supabase_client.py:token:eyJhbGciOiJIUzI1NiIsImtpZCI6IlBlZk9hVXRUNUtlRlI1WmwiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL29xd2h1aG9xY3JkZmxya25kY3RiLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIwOThhZDc1NC03MjhjLTRlNmItOTkzYi1kYzcyZjkzZGQyMjciLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzUwNTM4NDA1LCJpYXQiOjE3NTA1MzQ4MDUsImVtYWlsIjoic3VwZXJhZG1pbkB0ZXN0LmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJTdXBlckFkbWluIiwicm9sZSI6InN1cGVyYWRtaW4ifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc1MDUzNDgwNX1dLCJzZXNzaW9uX2lkIjoiOTdlMWQyYTMtNjYxNS00NDhhLThjNDktNzQyMjdlOTk1ZTI0IiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.tLkK9t5mMNAfvxxkdbv9apl48iTdLghlmdEZbIjyU6s
+2025-06-21 21:40:09 DEBUG    Nafees:scan_service.py:Calling HF inference for user_id=13cacee8-111a-49db-8886-fd2e5ebeecda…
+2025-06-21 21:40:10 ERROR    Nafees:scan_service.py:HF Inference API call failed
+Traceback (most recent call last):
+  File "/Users/madcodex/Library/Caches/pypoetry/virtualenvs/backend-U52EL10a-py3.12/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 409, in hf_raise_for_status
+    response.raise_for_status()
+  File "/Users/madcodex/Library/Caches/pypoetry/virtualenvs/backend-U52EL10a-py3.12/lib/python3.12/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://router.huggingface.co/hf-inference/models/MadCodex/gemstones_image_detection
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/madcodex/nafeesProject/nafeesProject/backend/app/services/scan_service.py", line 88, in create_scan
+    result = self.hf_client.image_classification(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/madcodex/Library/Caches/pypoetry/virtualenvs/backend-U52EL10a-py3.12/lib/python3.12/site-packages/huggingface_hub/inference/_client.py", line 1194, in image_classification
+    response = self._inner_post(request_parameters)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/madcodex/Library/Caches/pypoetry/virtualenvs/backend-U52EL10a-py3.12/lib/python3.12/site-packages/huggingface_hub/inference/_client.py", line 280, in _inner_post
+    hf_raise_for_status(response)
+  File "/Users/madcodex/Library/Caches/pypoetry/virtualenvs/backend-U52EL10a-py3.12/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 482, in hf_raise_for_status
+    raise _format(HfHubHTTPError, str(e), response) from e
+huggingface_hub.errors.HfHubHTTPError: 404 Client Error: Not Found for url: https://router.huggingface.co/hf-inference/models/MadCodex/gemstones_image_detection (Request ID: Root=1-68570a9a-76d5a56a2e02e3247e34cfe0;106a538c-c2aa-4c27-a03c-ebd65864809d)
+2025-06-21 21:43:53 INFO     Nafees:main.py:Checking active threads during shutdown...
+2025-06-21 21:43:53 INFO     Nafees:main.py:Thread still running: MainThread
+2025-06-21 21:43:53 INFO     Nafees:main.py:Thread still running: asyncio_0
+2025-06-21 21:43:53 INFO     Nafees:main.py:Thread still running: AnyIO worker thread
+2025-06-21 21:43:53 INFO     Nafees:main.py:Shutdown complete.
+2025-06-21 22:17:01 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 22:17:01 INFO     Nafees:scan_service.py:Using Hugging Face API token: hf_W...Urfo
+2025-06-21 22:17:01 DEBUG    Nafees:scan_service.py:Using Hugging Face API token: hf_W...Urfo
+2025-06-21 22:17:01 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 22:17:02 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 22:17:02 INFO     Nafees:supabase_client.py:the user is True
+2025-06-21 22:17:02 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 22:17:02 INFO     Nafees:supabase_client.py:✅  Superadmin already exists.
+2025-06-21 22:17:02 INFO     Nafees:supabase_client.py:token:eyJhbGciOiJIUzI1NiIsImtpZCI6IlBlZk9hVXRUNUtlRlI1WmwiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL29xd2h1aG9xY3JkZmxya25kY3RiLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIwOThhZDc1NC03MjhjLTRlNmItOTkzYi1kYzcyZjkzZGQyMjciLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzUwNTQwNjIyLCJpYXQiOjE3NTA1MzcwMjIsImVtYWlsIjoic3VwZXJhZG1pbkB0ZXN0LmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJTdXBlckFkbWluIiwicm9sZSI6InN1cGVyYWRtaW4ifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc1MDUzNzAyMn1dLCJzZXNzaW9uX2lkIjoiY2E0YmMyMzktOWYzOC00NWVjLWJmOTQtMDBlYTUzOWFkYTdkIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.mX2PXhTCYnZh6RjI1WhnmDSGM0lV15M8ZmTxEfO2Kcw
+2025-06-21 22:17:25 INFO     Nafees:scan_service.py:Initializing Hugging Face InferenceClient for model: MadCodex/gemstones_image_detection
+2025-06-21 22:17:25 INFO     Nafees:scan_service.py:Using Hugging Face API token: hf_W...Urfo
+2025-06-21 22:17:25 DEBUG    Nafees:scan_service.py:Calling HF inference for user_id=13cacee8-111a-49db-8886-fd2e5ebeecda…
+2025-06-21 22:17:26 ERROR    Nafees:scan_service.py:HF Inference API call failed
+Traceback (most recent call last):
+  File "/Users/madcodex/Library/Caches/pypoetry/virtualenvs/backend-U52EL10a-py3.12/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 409, in hf_raise_for_status
+    response.raise_for_status()
+  File "/Users/madcodex/Library/Caches/pypoetry/virtualenvs/backend-U52EL10a-py3.12/lib/python3.12/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://router.huggingface.co/hf-inference/models/MadCodex/gemstones_image_detection
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/madcodex/nafeesProject/nafeesProject/backend/app/services/scan_service.py", line 99, in create_scan
+    result =  self.hf_client.image_classification(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/madcodex/Library/Caches/pypoetry/virtualenvs/backend-U52EL10a-py3.12/lib/python3.12/site-packages/huggingface_hub/inference/_client.py", line 1194, in image_classification
+    response = self._inner_post(request_parameters)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/madcodex/Library/Caches/pypoetry/virtualenvs/backend-U52EL10a-py3.12/lib/python3.12/site-packages/huggingface_hub/inference/_client.py", line 280, in _inner_post
+    hf_raise_for_status(response)
+  File "/Users/madcodex/Library/Caches/pypoetry/virtualenvs/backend-U52EL10a-py3.12/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 482, in hf_raise_for_status
+    raise _format(HfHubHTTPError, str(e), response) from e
+huggingface_hub.errors.HfHubHTTPError: 404 Client Error: Not Found for url: https://router.huggingface.co/hf-inference/models/MadCodex/gemstones_image_detection (Request ID: Root=1-68571356-110419544e12fa4853d3a19b;fa42acb3-b434-45ab-be31-f6f43488128e)
+2025-06-21 22:25:26 INFO     Nafees:main.py:Checking active threads during shutdown...
+2025-06-21 22:25:26 INFO     Nafees:main.py:Thread still running: MainThread
+2025-06-21 22:25:26 INFO     Nafees:main.py:Thread still running: asyncio_0
+2025-06-21 22:25:26 INFO     Nafees:main.py:Thread still running: AnyIO worker thread
+2025-06-21 22:25:26 INFO     Nafees:main.py:Shutdown complete.
+2025-06-21 22:25:27 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 22:26:36 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 22:26:56 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 22:26:58 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 22:26:59 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 22:26:59 INFO     Nafees:supabase_client.py:the user is True
+2025-06-21 22:26:59 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 22:26:59 INFO     Nafees:supabase_client.py:✅  Superadmin already exists.
+2025-06-21 22:26:59 INFO     Nafees:supabase_client.py:token:eyJhbGciOiJIUzI1NiIsImtpZCI6IlBlZk9hVXRUNUtlRlI1WmwiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL29xd2h1aG9xY3JkZmxya25kY3RiLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIwOThhZDc1NC03MjhjLTRlNmItOTkzYi1kYzcyZjkzZGQyMjciLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzUwNTQxMjE5LCJpYXQiOjE3NTA1Mzc2MTksImVtYWlsIjoic3VwZXJhZG1pbkB0ZXN0LmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJTdXBlckFkbWluIiwicm9sZSI6InN1cGVyYWRtaW4ifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc1MDUzNzYxOX1dLCJzZXNzaW9uX2lkIjoiYjQxM2ZjOTEtMjZmOS00NDFhLWE4YzItNGEzMWVhNDM0Yzk4IiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.f3QNiYgjjTIs3rbjM4OiK78KtWovK0SAb0TlcCsQSP4
+2025-06-21 22:27:20 INFO     Nafees:scan_service.py:Loading HF pipeline for model: MadCodex/gemstones_image_detection
+2025-06-21 22:28:24 INFO     Nafees:main.py:Checking active threads during shutdown...
+2025-06-21 22:28:24 INFO     Nafees:main.py:Thread still running: MainThread
+2025-06-21 22:28:24 INFO     Nafees:main.py:Thread still running: asyncio_0
+2025-06-21 22:28:24 INFO     Nafees:main.py:Thread still running: AnyIO worker thread
+2025-06-21 22:28:24 INFO     Nafees:main.py:Shutdown complete.
+2025-06-21 22:28:26 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 22:28:28 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 22:28:28 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 22:28:28 INFO     Nafees:supabase_client.py:the user is True
+2025-06-21 22:28:29 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 22:28:29 INFO     Nafees:supabase_client.py:✅  Superadmin already exists.
+2025-06-21 22:28:29 INFO     Nafees:supabase_client.py:token:eyJhbGciOiJIUzI1NiIsImtpZCI6IlBlZk9hVXRUNUtlRlI1WmwiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL29xd2h1aG9xY3JkZmxya25kY3RiLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIwOThhZDc1NC03MjhjLTRlNmItOTkzYi1kYzcyZjkzZGQyMjciLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzUwNTQxMzA5LCJpYXQiOjE3NTA1Mzc3MDksImVtYWlsIjoic3VwZXJhZG1pbkB0ZXN0LmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJTdXBlckFkbWluIiwicm9sZSI6InN1cGVyYWRtaW4ifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc1MDUzNzcwOX1dLCJzZXNzaW9uX2lkIjoiYTc5OWI1OGUtMWM4ZC00NTNmLWFmNTktMTdiNzNiYzU3MGNlIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.i2clnHiYjKMlqjbhP6MA8LxGm9zNiU7pUWb1cUec3MQ
+2025-06-21 22:28:33 INFO     Nafees:scan_service.py:Loading HF pipeline for model: MadCodex/gemstones_image_detection
+2025-06-21 22:30:25 INFO     Nafees:main.py:Checking active threads during shutdown...
+2025-06-21 22:30:25 INFO     Nafees:main.py:Thread still running: MainThread
+2025-06-21 22:30:25 INFO     Nafees:main.py:Thread still running: asyncio_0
+2025-06-21 22:30:25 INFO     Nafees:main.py:Thread still running: AnyIO worker thread
+2025-06-21 22:30:25 INFO     Nafees:main.py:Shutdown complete.
+2025-06-21 22:31:22 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 22:31:24 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 22:31:25 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 22:31:25 INFO     Nafees:supabase_client.py:the user is True
+2025-06-21 22:31:25 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 22:31:25 INFO     Nafees:supabase_client.py:✅  Superadmin already exists.
+2025-06-21 22:31:25 INFO     Nafees:supabase_client.py:token:eyJhbGciOiJIUzI1NiIsImtpZCI6IlBlZk9hVXRUNUtlRlI1WmwiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL29xd2h1aG9xY3JkZmxya25kY3RiLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIwOThhZDc1NC03MjhjLTRlNmItOTkzYi1kYzcyZjkzZGQyMjciLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzUwNTQxNDg1LCJpYXQiOjE3NTA1Mzc4ODUsImVtYWlsIjoic3VwZXJhZG1pbkB0ZXN0LmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJTdXBlckFkbWluIiwicm9sZSI6InN1cGVyYWRtaW4ifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc1MDUzNzg4NX1dLCJzZXNzaW9uX2lkIjoiNjVjMGVjMTEtYzNjMy00MDJhLTlkYzktOTA5NGUxMjk2OWU5IiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.EVWf3Dzti0cHmBlEUxjS-XLO_RM-xH6Ab-hvgPz5sNM
+2025-06-21 22:31:30 INFO     Nafees:scan_service.py:Loading HF pipeline for model: MadCodex/gemstones_image_detection
+2025-06-21 22:34:43 INFO     Nafees:main.py:Checking active threads during shutdown...
+2025-06-21 22:34:43 INFO     Nafees:main.py:Thread still running: MainThread
+2025-06-21 22:34:43 INFO     Nafees:main.py:Thread still running: asyncio_0
+2025-06-21 22:34:43 INFO     Nafees:main.py:Thread still running: AnyIO worker thread
+2025-06-21 22:34:43 INFO     Nafees:main.py:Thread still running: Thread-1
+2025-06-21 22:34:43 INFO     Nafees:main.py:Shutdown complete.
+2025-06-21 22:34:45 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 22:34:47 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 22:34:48 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 22:34:48 INFO     Nafees:supabase_client.py:the user is True
+2025-06-21 22:34:48 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 22:34:48 INFO     Nafees:supabase_client.py:✅  Superadmin already exists.
+2025-06-21 22:34:48 INFO     Nafees:supabase_client.py:token:eyJhbGciOiJIUzI1NiIsImtpZCI6IlBlZk9hVXRUNUtlRlI1WmwiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL29xd2h1aG9xY3JkZmxya25kY3RiLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIwOThhZDc1NC03MjhjLTRlNmItOTkzYi1kYzcyZjkzZGQyMjciLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzUwNTQxNjg4LCJpYXQiOjE3NTA1MzgwODgsImVtYWlsIjoic3VwZXJhZG1pbkB0ZXN0LmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJTdXBlckFkbWluIiwicm9sZSI6InN1cGVyYWRtaW4ifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc1MDUzODA4OH1dLCJzZXNzaW9uX2lkIjoiNTJmZDI2ZjQtNTFlOC00NGIxLWFiZTktNzcwNWQxZmQ0NWQ4IiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.D0RS8umUra8zvqDRCiF3GnumdAAlMsX4xWx4FEosVg0
+2025-06-21 22:35:03 INFO     Nafees:scan_service.py:Loading HF pipeline for model: MadCodex/gemstones_image_detection
+2025-06-21 22:35:05 DEBUG    Nafees:scan_service.py:Running classification for user_id=13cacee8-111a-49db-8886-fd2e5ebeecda
+2025-06-21 22:35:51 INFO     Nafees:main.py:Checking active threads during shutdown...
+2025-06-21 22:35:51 INFO     Nafees:main.py:Thread still running: MainThread
+2025-06-21 22:35:51 INFO     Nafees:main.py:Thread still running: asyncio_0
+2025-06-21 22:35:51 INFO     Nafees:main.py:Thread still running: AnyIO worker thread
+2025-06-21 22:35:51 INFO     Nafees:main.py:Shutdown complete.
+2025-06-21 22:35:53 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 22:36:06 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 22:36:08 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 22:36:08 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 22:36:08 INFO     Nafees:supabase_client.py:the user is True
+2025-06-21 22:36:08 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 22:36:08 INFO     Nafees:supabase_client.py:✅  Superadmin already exists.
+2025-06-21 22:36:08 INFO     Nafees:supabase_client.py:token:eyJhbGciOiJIUzI1NiIsImtpZCI6IlBlZk9hVXRUNUtlRlI1WmwiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL29xd2h1aG9xY3JkZmxya25kY3RiLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIwOThhZDc1NC03MjhjLTRlNmItOTkzYi1kYzcyZjkzZGQyMjciLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzUwNTQxNzY4LCJpYXQiOjE3NTA1MzgxNjgsImVtYWlsIjoic3VwZXJhZG1pbkB0ZXN0LmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJTdXBlckFkbWluIiwicm9sZSI6InN1cGVyYWRtaW4ifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc1MDUzODE2OH1dLCJzZXNzaW9uX2lkIjoiZjg4NzJhODUtM2Y1Ni00Yjg0LTljMzctOWYzOGUyNTljYTA5IiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.nBrglzkPIW6vJ2pOjBd9NL0JmFgv1_godwfFkSDB6Cs
+2025-06-21 22:36:12 INFO     Nafees:scan_service.py:Loading HF pipeline for model: MadCodex/gemstones_image_detection
+2025-06-21 22:36:14 DEBUG    Nafees:scan_service.py:Running classification for user_id=13cacee8-111a-49db-8886-fd2e5ebeecda
+2025-06-21 22:38:19 INFO     Nafees:main.py:Checking active threads during shutdown...
+2025-06-21 22:38:19 INFO     Nafees:main.py:Thread still running: MainThread
+2025-06-21 22:38:19 INFO     Nafees:main.py:Thread still running: asyncio_0
+2025-06-21 22:38:19 INFO     Nafees:main.py:Thread still running: AnyIO worker thread
+2025-06-21 22:38:19 INFO     Nafees:main.py:Shutdown complete.
+2025-06-21 22:38:21 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 22:38:23 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 22:38:23 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 22:38:23 INFO     Nafees:supabase_client.py:the user is True
+2025-06-21 22:38:24 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 22:38:24 INFO     Nafees:supabase_client.py:✅  Superadmin already exists.
+2025-06-21 22:38:24 INFO     Nafees:supabase_client.py:token:eyJhbGciOiJIUzI1NiIsImtpZCI6IlBlZk9hVXRUNUtlRlI1WmwiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL29xd2h1aG9xY3JkZmxya25kY3RiLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIwOThhZDc1NC03MjhjLTRlNmItOTkzYi1kYzcyZjkzZGQyMjciLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzUwNTQxOTA0LCJpYXQiOjE3NTA1MzgzMDQsImVtYWlsIjoic3VwZXJhZG1pbkB0ZXN0LmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJTdXBlckFkbWluIiwicm9sZSI6InN1cGVyYWRtaW4ifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc1MDUzODMwNH1dLCJzZXNzaW9uX2lkIjoiNjJiMTAwNTgtOTg2Yy00NGY3LTgxYzQtNWMyNjkzNjYyM2ZjIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.2kqGTzueZZ4K4yNU0SYgYwM4mdZWsJdPOy5BHeszJwk
+2025-06-21 22:38:26 INFO     Nafees:scan_service.py:Loading HF pipeline for model: MadCodex/gemstones_image_detection
+2025-06-21 22:38:28 DEBUG    Nafees:scan_service.py:Running classification for user_id=13cacee8-111a-49db-8886-fd2e5ebeecda
+2025-06-21 22:38:28 INFO     Nafees:scan_service.py:Inference result for user_id=13cacee8-111a-49db-8886-fd2e5ebeecda: Almandine with score 0.1787
+2025-06-21 22:40:18 INFO     Nafees:main.py:Checking active threads during shutdown...
+2025-06-21 22:40:18 INFO     Nafees:main.py:Thread still running: MainThread
+2025-06-21 22:40:18 INFO     Nafees:main.py:Thread still running: asyncio_0
+2025-06-21 22:40:18 INFO     Nafees:main.py:Thread still running: AnyIO worker thread
+2025-06-21 22:40:18 INFO     Nafees:main.py:Shutdown complete.
+2025-06-21 22:40:20 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 22:40:22 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-21 22:40:22 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 22:40:22 INFO     Nafees:supabase_client.py:the user is True
+2025-06-21 22:40:23 INFO     Nafees:supabase_client.py:this is the get auth user response ['superadmin@test.com']
+2025-06-21 22:40:23 INFO     Nafees:supabase_client.py:✅  Superadmin already exists.
+2025-06-21 22:40:23 INFO     Nafees:supabase_client.py:token:eyJhbGciOiJIUzI1NiIsImtpZCI6IlBlZk9hVXRUNUtlRlI1WmwiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL29xd2h1aG9xY3JkZmxya25kY3RiLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIwOThhZDc1NC03MjhjLTRlNmItOTkzYi1kYzcyZjkzZGQyMjciLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzUwNTQyMDIzLCJpYXQiOjE3NTA1Mzg0MjMsImVtYWlsIjoic3VwZXJhZG1pbkB0ZXN0LmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJTdXBlckFkbWluIiwicm9sZSI6InN1cGVyYWRtaW4ifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc1MDUzODQyM31dLCJzZXNzaW9uX2lkIjoiYzYzOGQ4NzktNzI0NC00ZjcyLThjYzctMTgyMjllZWVhNmUzIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.ufU119zfyvGrM-OJWgz3LKA62c6X_4X9XJDsnmqrB1Y
+2025-06-21 22:40:36 INFO     Nafees:scan_service.py:Loading HF pipeline for model: MadCodex/gemstones_image_detection
+2025-06-21 22:40:37 DEBUG    Nafees:scan_service.py:Running classification for user_id=13cacee8-111a-49db-8886-fd2e5ebeecda
+2025-06-21 22:40:52 INFO     Nafees:main.py:Checking active threads during shutdown...
+2025-06-21 22:40:52 INFO     Nafees:main.py:Thread still running: MainThread
+2025-06-21 22:40:52 INFO     Nafees:main.py:Thread still running: asyncio_0
+2025-06-21 22:40:52 INFO     Nafees:main.py:Thread still running: AnyIO worker thread
+2025-06-21 22:40:52 INFO     Nafees:main.py:Shutdown complete.

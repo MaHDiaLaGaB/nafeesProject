@@ -23,6 +23,11 @@ class Settings(BaseSettings):
     )
     ECHO_SQL: bool = Field(False, description="Whether to echo SQL queries")
 
+    # save files
+    MEDIA_DIR: str = Field(
+        "media", description="Directory where media files are stored"
+    )
+
     # Server settings
     SERVER_PORT: int = Field(9213, description="Port on which the server runs")
 
@@ -35,6 +40,14 @@ class Settings(BaseSettings):
     # Sentry settings
     SENTRY_DSN: Optional[str] = Field(None, description="DSN for Sentry error tracking")
 
+    # AI Model settings
+    HF_API_TOKEN: Optional[SecretStr] = Field(
+        None, description="Hugging Face API token for model access"
+    )
+    HF_MODEL: str = Field(
+        "naveenbhat/nafees-vision", description="Hugging Face model ID for inference"
+    )
+
     # LLM settings
     # OPENAI_API_KEY: str = Field(..., description="API key for OpenAI")
 
@@ -44,7 +57,7 @@ class Settings(BaseSettings):
         json_encoders = {SecretStr: lambda v: v.get_secret_value() if v else None}
 
     # @field_validator(
-        
+
     # )
     # @classmethod
     # def not_empty(cls, v, field):

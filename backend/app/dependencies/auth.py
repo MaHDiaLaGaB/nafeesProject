@@ -45,4 +45,5 @@ def role_required(*allowed_roles: str):
         if user["role"] not in allowed_roles and user["role"] != "superadmin":
             raise HTTPException(403, "Insufficient role privileges")
         return user
+
     return wrapper
