@@ -19,7 +19,7 @@ venv/
 .env.local
 .env.production
 .env.development
-
+ai_model/
 # VSCode
 .vscode/
 
