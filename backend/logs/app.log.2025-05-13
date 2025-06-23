@@ -1,0 +1,11 @@
+2025-05-13 16:18:55 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-05-13 16:20:12 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-05-13 16:20:33 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-05-13 16:20:51 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-05-13 16:21:04 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-05-13 16:21:04 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-05-13 16:21:04 INFO     Nafees:supabase_client.py:the user is None
+2025-05-13 16:21:04 ERROR    Nafees:supabase_client.py:Error creating user superadmin@test.com: [Errno 8] nodename nor servname provided, or not known
+2025-05-13 16:21:04 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-05-13 16:21:04 INFO     Nafees:supabase_client.py:the user is None
+2025-05-13 16:21:04 ERROR    Nafees:supabase_client.py:Error creating user superadmin@test.com: [Errno 8] nodename nor servname provided, or not known
