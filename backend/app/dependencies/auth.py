@@ -1,7 +1,7 @@
 from fastapi import Depends, HTTPException
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
-from clients.supabase_client import SupabaseClient
-from logger import get_logger
+from app.clients.supabase_client import SupabaseClient
+from app.logger import get_logger
 
 logger = get_logger("auth")
 security = HTTPBearer()

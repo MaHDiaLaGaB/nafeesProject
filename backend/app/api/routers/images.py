@@ -5,9 +5,9 @@ from fastapi import APIRouter, Depends, File, UploadFile, status, HTTPException
 from fastapi.responses import FileResponse
 from pydantic import BaseModel
 
-from dependencies import DBSessionDep
-from services.image_service import get_image_service, ImageService
-from services.scan_service import get_scan_service
+from app.dependencies import DBSessionDep
+from app.services.image_service import get_image_service, ImageService
+from app.services.scan_service import get_scan_service
 
 
 # ---------- Pydantic I/O ---------- #

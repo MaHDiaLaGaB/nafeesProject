@@ -3,7 +3,7 @@ from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import relationship
 import enum, uuid, datetime as dt
 
-from database import Base
+from app.database import Base
 
 
 class UserRole(str, enum.Enum):

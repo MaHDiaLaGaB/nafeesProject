@@ -5,13 +5,13 @@ from uuid import UUID
 from fastapi import HTTPException, UploadFile, Depends
 from sqlalchemy.exc import SQLAlchemyError
 
-from crud.image import ImageCRUD
-from crud.base_crud import BaseCRUD
-from models.images import UploadedImage
-from models.users import User
-from services.scan_service import ScanResultService, get_scan_service
-from dependencies import DBSessionDep
-from core.config import settings  # assume you have MEDIA_DIR in settings
+from app.crud.image import ImageCRUD
+from app.crud.base_crud import BaseCRUD
+from app.models.images import UploadedImage
+from app.models.users import User
+from app.services.scan_service import ScanResultService, get_scan_service
+from app.dependencies import DBSessionDep
+from app.core.config import settings  # assume you have MEDIA_DIR in settings
 
 
 class ImageService:

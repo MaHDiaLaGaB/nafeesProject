@@ -6,9 +6,9 @@ from uuid import UUID
 from sqlalchemy.exc import SQLAlchemyError
 from fastapi import HTTPException
 
-from crud.base_crud import BaseCRUD
-from dependencies import DBSessionDep
-from models.message import Message as MessageModel
+from app.crud.base_crud import BaseCRUD
+from app.dependencies import DBSessionDep
+from app.models.message import Message as MessageModel
 
 
 class MessageService:

@@ -1,8 +1,8 @@
 from sqlalchemy.orm import Session
 from uuid import UUID
-from crud.base_crud import BaseCRUD
-from models import Chat, Message
-from schemas.chat import MessageCreate
+from app.crud.base_crud import BaseCRUD
+from app.models import Chat, Message
+from app.schemas.chat import MessageCreate
 
 
 class ConversationCRUD(BaseCRUD[Chat]):

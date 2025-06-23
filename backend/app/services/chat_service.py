@@ -6,9 +6,9 @@ from uuid import UUID
 from sqlalchemy.exc import SQLAlchemyError
 from fastapi import HTTPException
 
-from crud.base_crud import BaseCRUD
-from dependencies import DBSessionDep
-from models.chat import Chat as ChatModel
+from app.crud.base_crud import BaseCRUD
+from app.dependencies import DBSessionDep
+from app.models.chat import Chat as ChatModel
 
 
 class ChatService:

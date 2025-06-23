@@ -3,8 +3,8 @@ from typing import Optional
 from supabase import Client, create_client
 from supabase.lib.client_options import ClientOptions
 
-from core.config import settings
-from logger import get_logger
+from app.core.config import settings
+from app.logger import get_logger
 
 logger = get_logger()
 

@@ -7,7 +7,7 @@ from sqlalchemy import update
 from sqlalchemy.exc import SQLAlchemyError
 from sqlalchemy.orm import Session
 
-from logger import get_logger
+from app.logger import get_logger
 
 T = TypeVar("T", bound=BaseModel)
 

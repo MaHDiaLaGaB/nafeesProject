@@ -11,12 +11,12 @@ from sqlalchemy.exc import SQLAlchemyError
 from transformers import pipeline
 from PIL import Image
 
-from crud.base_crud import BaseCRUD
-from dependencies import DBSessionDep
-from models.scan import ScanResult as ScanResultModel
-from models.users import User as UserModel
-from core.config import settings
-from logger import get_logger
+from app.crud.base_crud import BaseCRUD
+from app.dependencies import DBSessionDep
+from app.models.scan import ScanResult as ScanResultModel
+from app.models.users import User as UserModel
+from app.core.config import settings
+from app.logger import get_logger
 
 logger = get_logger(__name__)
 

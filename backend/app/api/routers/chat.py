@@ -10,11 +10,12 @@ from fastapi import (
     HTTPException,
 )
 
-from dependencies.deps import CurrentUser
-from dependencies.auth import role_required
-from services.chat_service import get_chat_service, ChatService
-from services.message_service import get_message_service, MessageService
-from schemas.chat import ChatCreate, MessageOut
+from app.dependencies.deps import CurrentUser
+from app.dependencies.auth import role_required
+from app.dependencies.deps import get_current_user_ws
+from app.services.chat_service import get_chat_service, ChatService
+from app.services.message_service import get_message_service, MessageService
+from app.schemas.chat import ChatCreate, MessageOut
 
 router = APIRouter()
 
@@ -22,18 +23,13 @@ router = APIRouter()
 # ---- HTTP endpoints for creating/fetching chats ----
 
 
-@router.post(
-    "/create-chat",
-    summary="Start a new conversation",
-    dependencies=[Depends(role_required("customer"))],
-)
+@router.post("/create-chat", summary="Start a new conversation")
 async def create_chat(
     payload: ChatCreate,
-    current_user: CurrentUser,
+    current_user: dict = Depends(role_required("customer")),
     svc: ChatService = Depends(get_chat_service),
 ):
-    # optionally enforce that current_user.id == payload.customer_id
-    return await svc.create_chat(payload.customer_id, payload.merchant_id)
+    return await svc.create_chat(str(current_user["id"]), str(payload.merchant_id))
 
 
 @router.get(
@@ -87,13 +83,17 @@ manager = ConnectionManager()
 async def websocket_chat(
     chat_id: UUID,
     websocket: WebSocket,
-    current_user: CurrentUser,
+    current_user: dict = Depends(get_current_user_ws),
     chat_svc: ChatService = Depends(get_chat_service),
     msg_svc: MessageService = Depends(get_message_service),
 ):
-    # 1) verify chat exists & that user is allowed
+    # if get_current_user_ws already closed the socket on bad token, we bail
+    if not current_user:
+        return
+
+    # ensure they belong
     chat = await chat_svc.get_chat_by_id(chat_id)
-    if current_user.id not in {chat.customer_id, chat.merchant_id}:
+    if current_user["id"] not in {chat.customer_id, chat.merchant_id}:
         await websocket.close(code=1008)
         return
 
@@ -103,14 +103,12 @@ async def websocket_chat(
     try:
         while True:
             data = await websocket.receive_json()
-            # expect: {"content": "...", "image_url": None}
             payload = {
                 "conversation_id": chat_id,
-                "sender_id": current_user.id,
+                "sender_id": current_user["id"],
                 **data,
             }
             msg = await msg_svc.send_message(payload)
-            # Pydantic v2: validate from ORM and dump to dict
             out = MessageOut.model_validate(msg).model_dump()
             await manager.broadcast(room, out)
     except WebSocketDisconnect:

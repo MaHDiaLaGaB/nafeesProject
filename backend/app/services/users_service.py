@@ -5,11 +5,11 @@ from uuid import UUID
 from sqlalchemy.exc import SQLAlchemyError
 from fastapi import HTTPException, status
 
-from crud.base_crud import BaseCRUD
-from dependencies import DBSessionDep
-from models.users import User as UserModel, UserRole
-from schemas.users import UserOut, UserUpdate, UserBase
-from logger import get_logger
+from app.crud.base_crud import BaseCRUD
+from app.dependencies import DBSessionDep
+from app.models.users import User as UserModel, UserRole
+from app.schemas.users import UserOut, UserUpdate, UserBase
+from app.logger import get_logger
 logger = get_logger(__name__)
 # --------------------------------------------------------------------------- #
 #                             USER SERVICE                                     #

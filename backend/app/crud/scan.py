@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
 from uuid import UUID
-from models import ScanResult
+from app.models import ScanResult
 
 
 def save_scan(db: Session, user_id: UUID, image_url: str, prediction: str):

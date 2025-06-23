@@ -9,11 +9,11 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 
-from core.config import settings
-from database import Base, engine
-from api.endpoints import api_router
-from clients.supabase_client import SupabaseClient
-from logger import get_logger
+from app.core.config import settings
+from app.database import Base, engine
+from app.api.endpoints import api_router
+from app.clients.supabase_client import SupabaseClient
+from app.logger import get_logger
 
 logger = get_logger(__name__)
 

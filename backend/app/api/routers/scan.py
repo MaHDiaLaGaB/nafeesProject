@@ -2,7 +2,7 @@
 from uuid import UUID
 from fastapi import APIRouter, Depends, File, UploadFile, Form
 
-from services.scan_service import get_scan_service, ScanResultService
+from app.services.scan_service import get_scan_service, ScanResultService
 
 router = APIRouter()
 

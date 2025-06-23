@@ -2,7 +2,7 @@ from fastapi import Depends, HTTPException, WebSocket
 from fastapi.security import HTTPAuthorizationCredentials
 from typing import Annotated
 from sqlalchemy.orm import Session
-from database import get_db
+from app.database import get_db
 from .auth import verify_jwt
 
 DBSessionDep = Annotated[Session, Depends(get_db)]
