@@ -1,137 +1,145 @@
-# app/services/scan_result_service.py
-from __future__ import annotations
-
 import base64
-import io
+import os
+import json
+from io import BytesIO
 from functools import lru_cache
-from typing import List, Dict, Any
-from uuid import UUID
+from typing import Dict, Any, Optional
+from uuid import UUID, uuid4
 
-import torch
-from PIL import Image
-from fastapi import HTTPException
+from fastapi import HTTPException, UploadFile, Depends
 from sqlalchemy.exc import SQLAlchemyError
-from transformers import AutoModelForImageClassification, AutoImageProcessor
+from transformers import pipeline
+from PIL import Image
 
-from crud.base_crud import BaseCRUD
-from dependencies import DBSessionDep
-from models.scan import ScanResult as ScanResultModel
-from models.users import User as UserModel
+from app.crud.base_crud import BaseCRUD
+from app.dependencies import DBSessionDep
+from app.models.scan import ScanResult as ScanResultModel
+from app.models.users import User as UserModel
+from app.core.config import settings
+from app.logger import get_logger
+
+logger = get_logger(__name__)
 
 # --------------------------------------------------------------------------- #
-# ---------------------  ML utilities: load + inference  -------------------- #
+#                         HUGGING FACE PIPELINE                              #
 # --------------------------------------------------------------------------- #
-
-MODEL_DIR = "gemstones_image_detection"  # same value you used in TrainingArguments
-
 
 @lru_cache()
-def _load_model_and_processor():
+def get_image_classifier():
     """
-    Loads the model and processor exactly once per process.
+    Returns a cached Hugging Face image-classification pipeline.
     """
-    model = AutoModelForImageClassification.from_pretrained(MODEL_DIR)
-    processor = AutoImageProcessor.from_pretrained(MODEL_DIR)
-    model.eval()  # we only do inference here
-    return model, processor
+    if not settings.HF_MODEL or not settings.HF_API_TOKEN:
+        raise ValueError("Both HF_MODEL and HF_API_TOKEN must be set in .env")
+    logger.info("Loading HF pipeline for model: %s", settings.HF_MODEL)
+    return pipeline(
+        task="image-classification",
+        model=settings.HF_MODEL,
+        token=settings.HF_API_TOKEN.get_secret_value(),
+    )
 
+# --------------------------------------------------------------------------- #
+#                             IMAGE DECODING                                 #
+# --------------------------------------------------------------------------- #
 
-def _run_inference(img: Image.Image) -> Dict[str, Any]:
+def decode_image_bytes(
+    file: Optional[UploadFile] = None,
+    image_b64: Optional[str]    = None
+) -> Image.Image:
     """
-    Returns {"predicted_label": str, "confidence": float}
+    Decode an uploaded file or base64-encoded string into a PIL Image (RGB).
     """
-    model, processor = _load_model_and_processor()
-    inputs = processor(images=img, return_tensors="pt").to(model.device)
-    with torch.no_grad():
-        logits = model(**inputs).logits.squeeze(0)  # shape: [num_labels]
-    probs = logits.softmax(dim=0)
-    conf, idx = torch.max(probs, dim=0)
-    label = model.config.id2label[int(idx)]
-    return {"predicted_label": label, "confidence": conf.item()}
-
-
-def _decode_image(data: Dict[str, Any]) -> Image.Image:
-    """
-    Turn either an uploaded base64 string or an on-disk path into a PIL image.
-    """
-    if "image_b64" in data:  # TODO: adjust key to match your payload
+    img_bytes: bytes = b""
+    if file:
+        img_bytes = file.file.read()
+    elif image_b64:
         try:
-            raw = base64.b64decode(data["image_b64"])
-            return Image.open(io.BytesIO(raw)).convert("RGB")
+            _, b64data = image_b64.split(",", 1) if "," in image_b64 else ("", image_b64)
+            img_bytes = base64.b64decode(b64data)
         except Exception:
             raise HTTPException(status_code=400, detail="Invalid base64 image")
-    elif "image_path" in data:  # TODO: adjust key to match your payload
-        try:
-            return Image.open(data["image_path"]).convert("RGB")
-        except FileNotFoundError:
-            raise HTTPException(status_code=404, detail="Image file not found")
     else:
-        raise HTTPException(
-            status_code=400,
-            detail="Request body must include either 'image_b64' or 'image_path'",
-        )
+        raise HTTPException(status_code=400, detail="No image provided")
 
+    try:
+        return Image.open(BytesIO(img_bytes)).convert("RGB")
+    except Exception:
+        raise HTTPException(status_code=400, detail="Unable to decode image bytes")
 
 # --------------------------------------------------------------------------- #
-# ---------------------------  Main service class  -------------------------- #
+#                            SERVICE LAYER                                    #
 # --------------------------------------------------------------------------- #
-
 
 class ScanResultService:
     def __init__(
         self,
         scan_crud: BaseCRUD[ScanResultModel],
         user_crud: BaseCRUD[UserModel],
+        classifier,
     ):
         self.scan_crud = scan_crud
         self.user_crud = user_crud
+        self.classifier = classifier
 
-    # ------------------------------------------------------------------ #
-    # Create a scan result **and** fill predicted_label + confidence
-    # ------------------------------------------------------------------ #
-    async def create_scan_result(self, data: Dict[str, Any]) -> ScanResultModel:
-        # 1) Make sure the user exists
-        user = await self.user_crud.get_by_id(data["user_id"])
+    async def create_scan(
+        self,
+        user_id: UUID,
+        file: Optional[UploadFile] = None,
+        image_b64: Optional[str] = None,
+        extra: Dict[str, Any] = {}
+    ) -> ScanResultModel:
+        # 1) Ensure user exists
+        user = await self.user_crud.get_by_id(user_id)
         if not user:
             raise HTTPException(status_code=404, detail="User not found")
 
-        # 2) Run model inference
-        img = _decode_image(data)
-        preds = _run_inference(img)
+        # 2) Decode image and run classification
+        try:
+            img = decode_image_bytes(file=file, image_b64=image_b64)
+            logger.debug("Running classification for user_id=%s", user_id)
+            results = self.classifier(img, top_k=1)
+            if not results:
+                raise HTTPException(status_code=500, detail="Empty inference response")
+            top = results[0]
+        except HTTPException:
+            raise
+        except Exception as e:
+            logger.exception("Inference pipeline failed")
+            raise HTTPException(status_code=502, detail=f"Inference failed: {e}")
 
-        # 3) Merge predictions into the payload we persist
-        payload = {**data, **preds}
+        # 3) Save image to disk and generate URL
+        filename = f"{uuid4()}.jpg"
+        upload_dir = getattr(settings, "UPLOAD_DIR", "./uploads")
+        os.makedirs(upload_dir, exist_ok=True)
+        file_path = os.path.join(upload_dir, filename)
+        img.save(file_path)
+        base_url = getattr(settings, "BASE_URL", "http://localhost:8000")
+        image_url = f"{base_url}/uploads/{filename}"
 
-        # 4) Persist
+        # 4) Prepare prediction JSON
+        prediction = json.dumps({
+            "label": top.get("label"),
+            "score": top.get("score"),
+        })
+
+        # 5) Persist to database
+        payload = {"user_id": str(user_id), "image_url": image_url, "prediction": prediction}
+        payload.update(extra)
         try:
             return await self.scan_crud.create(payload)
         except SQLAlchemyError:
-            raise HTTPException(status_code=500, detail="Failed to create scan result")
+            logger.exception("Failed to save scan result")
+            raise HTTPException(status_code=500, detail="Failed to save scan result")
 
-    # ------------------------------------------------------------------ #
-    # Other CRUD helpers (unchanged except for types)
-    # ------------------------------------------------------------------ #
-    async def get_scan_by_id(self, scan_id: UUID) -> ScanResultModel:
-        scan = await self.scan_crud.get_by_id(scan_id)
-        if not scan:
-            raise HTTPException(status_code=404, detail=f"ScanResult {scan_id} not found")
-        return scan
-
-    async def get_scans_by_user(self, user_id: UUID) -> List[ScanResultModel]:
-        return await self.scan_crud.get_all_by_field("user_id", user_id)
-
-    async def delete_scan(self, scan_id: UUID) -> None:
-        scan = await self.get_scan_by_id(scan_id)
-        await self.scan_crud.delete(scan.id)
+    # placeholder for other CRUD methods: get_scan, list_scans, delete_scan
 
 
-# Singleton accessor (same pattern you already had)
-from functools import lru_cache  # noqa: E402  (re-import for clarity)
-
-
-@lru_cache()
-def get_scan_service(db: DBSessionDep) -> ScanResultService:
+def get_scan_service(
+    db: DBSessionDep,
+    classifier=Depends(get_image_classifier),
+) -> ScanResultService:
     return ScanResultService(
         BaseCRUD(ScanResultModel, db),
         BaseCRUD(UserModel, db),
+        classifier,
     )

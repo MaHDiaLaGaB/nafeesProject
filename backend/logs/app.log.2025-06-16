@@ -1,0 +1,9 @@
+2025-06-16 11:24:16 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-16 11:24:59 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-16 11:25:00 INFO     Nafees:supabase_client.py:Supabase client initialized successfully.
+2025-06-16 11:25:01 INFO     Nafees:supabase_client.py:this is the get auth user response []
+2025-06-16 11:25:01 INFO     Nafees:supabase_client.py:the user is False
+2025-06-16 11:25:01 INFO     Nafees:supabase_client.py:this is the get auth user response []
+2025-06-16 11:25:01 INFO     Nafees:supabase_client.py:User account created successfully for superadmin@test.com
+2025-06-16 11:25:01 WARNING  Nafees:supabase_client.py:🚀  Superadmin seeded — **change the default password ASAP!**
+2025-06-16 11:25:01 INFO     Nafees:supabase_client.py:token:eyJhbGciOiJIUzI1NiIsImtpZCI6IlBlZk9hVXRUNUtlRlI1WmwiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL29xd2h1aG9xY3JkZmxya25kY3RiLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiIwOThhZDc1NC03MjhjLTRlNmItOTkzYi1kYzcyZjkzZGQyMjciLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzUwMDY5NTAxLCJpYXQiOjE3NTAwNjU5MDEsImVtYWlsIjoic3VwZXJhZG1pbkB0ZXN0LmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJTdXBlckFkbWluIiwicm9sZSI6InN1cGVyYWRtaW4ifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc1MDA2NTkwMX1dLCJzZXNzaW9uX2lkIjoiNjgzNTM4MTctODkwMS00YzRiLTliMjQtZDY5N2YxNTNlOWFlIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.xh46gJpxCu_WQZs4gb4gVI__LDkzt2PXUM_y-abog54

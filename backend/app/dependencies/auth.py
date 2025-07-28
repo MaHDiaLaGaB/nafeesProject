@@ -1,7 +1,7 @@
 from fastapi import Depends, HTTPException
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
-from clients.supabase_client import SupabaseClient
-from logger import get_logger
+from app.clients.supabase_client import SupabaseClient
+from app.logger import get_logger
 
 logger = get_logger("auth")
 security = HTTPBearer()
@@ -45,4 +45,5 @@ def role_required(*allowed_roles: str):
         if user["role"] not in allowed_roles and user["role"] != "superadmin":
             raise HTTPException(403, "Insufficient role privileges")
         return user
+
     return wrapper

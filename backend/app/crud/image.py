@@ -1,6 +1,3 @@
-# app/crud/image_crud.py
-from __future__ import annotations
-
 import os
 import datetime as dt
 from typing import List, Optional
@@ -9,9 +6,9 @@ from uuid import UUID
 from sqlalchemy.orm import Session
 from sqlalchemy.exc import SQLAlchemyError
 
-from crud.base_crud import BaseCRUD
-from models.images import UploadedImage
-from logger import get_logger
+from app.crud.base_crud import BaseCRUD
+from app.models.images import UploadedImage
+from app.logger import get_logger
 
 
 class ImageCRUD(BaseCRUD[UploadedImage]):

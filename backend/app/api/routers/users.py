@@ -4,10 +4,10 @@ from uuid import UUID
 
 from fastapi import APIRouter, Depends, HTTPException, status
 
-from dependencies.deps import CurrentUser, DBSessionDep
-from schemas.users import UserBase, UserUpdate
-from services.users_service import get_user_service, UserService
-from models.users import UserRole
+from app.dependencies.deps import CurrentUser, DBSessionDep
+from app.schemas.users import UserBase, UserUpdate
+from app.services.users_service import get_user_service, UserService
+from app.models.users import UserRole
 
 router = APIRouter()
 

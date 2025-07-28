@@ -3,8 +3,8 @@ from typing import Optional
 from supabase import Client, create_client
 from supabase.lib.client_options import ClientOptions
 
-from core.config import settings
-from logger import get_logger
+from app.core.config import settings
+from app.logger import get_logger
 
 logger = get_logger()
 
@@ -54,7 +54,12 @@ class SupabaseClient:
         """
         try:
             response = self.client.auth.admin.create_user(
-                {"email": email, "password": password, "email_confirm": True,"user_metadata": user_data}
+                {
+                    "email": email,
+                    "password": password,
+                    "email_confirm": True,
+                    "user_metadata": user_data,
+                }
             )
             logger.info(f"User account created successfully for {email}")
             return response
@@ -74,7 +79,7 @@ class SupabaseClient:
                 return False
         except Exception:
             return None
-        
+
     def sign_in(self, email: str, password: str) -> dict:
         """
         Sign in with email+ password and return a dict containing:

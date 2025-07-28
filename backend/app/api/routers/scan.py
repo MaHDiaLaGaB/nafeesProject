@@ -1,58 +1,46 @@
 # app/api_v1/scan.py
-from uuid import uuid4
-import os
+from uuid import UUID
+from fastapi import APIRouter, Depends, File, UploadFile, Form
 
-from fastapi import APIRouter, Depends, File, UploadFile, HTTPException
-from sqlalchemy.exc import SQLAlchemyError
-
-from dependencies.deps import CurrentUser, DBSessionDep
-from dependencies.auth import role_required
-from schemas.scan import ScanResultOut
-from services.scan_service import get_scan_service, ScanResultService
+from app.services.scan_service import get_scan_service, ScanResultService
 
 router = APIRouter()
 
-
-@router.post(
-    "/scanning",
-    summary="Upload an image, run scan prediction, and record the result",
-)
-async def upload_and_scan(
-    current_user: CurrentUser,
-    file: UploadFile = File(...),
-    scan_service: ScanResultService = Depends(get_scan_service),
+@router.post("/scanning")
+async def create_scan_result(
+    user_id: UUID,
+    file: UploadFile = File(None),
+    image_b64: str = Form(None),
+    svc: ScanResultService = Depends(get_scan_service),
 ):
-    # 1) save upload locally (or to your storage of choice)
-    upload_dir = "uploads/scans"
-    os.makedirs(upload_dir, exist_ok=True)
-    filename = f"{uuid4().hex}_{file.filename}"
-    file_path = os.path.join(upload_dir, filename)
+    """
+    Upload via multipart or base64 → local HF pipeline inference → save result.
+    """
+    extra: dict = {}  # TODO: capture any additional Form(...) fields
+    return await svc.create_scan(
+        user_id=user_id,
+        file=file,
+        image_b64=image_b64,
+        extra=extra,
+    )
 
-    try:
-        contents = await file.read()
-        with open(file_path, "wb") as out_file:
-            out_file.write(contents)
-    except Exception as e:
-        raise HTTPException(status_code=500, detail="Could not save uploaded file")
+@router.get("/{scan_id}")
+async def read_scan(
+    scan_id: UUID,
+    svc: ScanResultService = Depends(get_scan_service),
+):
+    return await svc.get_scan(scan_id)
 
-    # 2) run your prediction logic (stubbed here)
-    #    Replace `perform_scan_prediction` with your actual inference call
-    try:
-        pass
-        # prediction = await perform_scan_prediction(file_path)
-    except Exception as e:
-        raise HTTPException(status_code=500, detail="Scan prediction failed")
+@router.get("/user/{user_id}")
+async def list_user_scans(
+    user_id: UUID,
+    svc: ScanResultService = Depends(get_scan_service),
+):
+    return await svc.list_scans(user_id)
 
-    # 3) record in DB
-    try:
-        scan = await scan_service.create_scan_result({
-            "user_id": current_user.id,
-            "image_url": file_path,
-            # "prediction": prediction,
-        })
-    except SQLAlchemyError:
-        raise HTTPException(status_code=500, detail="Failed to persist scan result")
-
-    if not scan:
-        raise HTTPException(status_code=500, detail="Unknown error")
-    return scan
+@router.delete("/{scan_id}", status_code=204)
+async def delete_scan(
+    scan_id: UUID,
+    svc: ScanResultService = Depends(get_scan_service),
+):
+    await svc.delete_scan(scan_id)

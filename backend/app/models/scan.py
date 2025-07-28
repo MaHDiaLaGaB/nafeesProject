@@ -2,7 +2,7 @@ from sqlalchemy import Column, UUID, String, Text, ForeignKey, DateTime
 from sqlalchemy.orm import relationship
 from datetime import datetime
 import uuid
-from database import Base
+from app.database import Base
 
 
 class ScanResult(Base):

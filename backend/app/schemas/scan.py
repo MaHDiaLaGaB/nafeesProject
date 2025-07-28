@@ -2,6 +2,7 @@ from uuid import UUID
 from datetime import datetime
 from pydantic import BaseModel
 
+
 class ScanResultOut(BaseModel):
     id: UUID
     image_url: str

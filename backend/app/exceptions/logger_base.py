@@ -7,7 +7,7 @@ import sentry_sdk
 from colorlog import ColoredFormatter
 from sentry_sdk.integrations.logging import LoggingIntegration
 
-from core.config import Settings
+from app.core.config import Settings
 
 
 class CustomLogger:

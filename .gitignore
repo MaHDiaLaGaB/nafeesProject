@@ -19,7 +19,8 @@ venv/
 .env.local
 .env.production
 .env.development
-
+./ai_model/date/
+/Users/madcodex/nafeesProject/nafeesProject/ai_model/data
 # VSCode
 .vscode/
 
