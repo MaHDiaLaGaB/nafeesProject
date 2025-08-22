@@ -21,5 +21,5 @@ class Chat(Base):
         "User", back_populates="conversations_as_merchant", foreign_keys=[merchant_id]
     )
     messages = relationship(
-        "Message", back_populates="conversation", cascade="all, delete"  # ← was "chat"
+        "Message", back_populates="chat", cascade="all, delete"  # ← was "chat"
     )

@@ -16,5 +16,5 @@ class Message(Base):
     image_url = Column(String, nullable=True)  # رابط الصورة المرفقـة (اختياري)
     created_at = Column(DateTime, default=datetime.utcnow)
 
-    conversation = relationship("Chat", back_populates="messages")
+    chat = relationship("Chat", back_populates="messages")
     sender = relationship("User", back_populates="messages_sent")

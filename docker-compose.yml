@@ -1,11 +1,18 @@
-version: '3.8'
-
 services:
   backend:
     build:
       context: ./backend
       dockerfile: Dockerfile
+    volumes:
+      # Mount your source into /app (delegated for perf on macOS/Windows)
+      - ./backend:/app:delegated
     ports:
       - '8232:8232'
     env_file:
       - ./backend/.env
+    # Override the CMD in your Dockerfile to be sure reload is enabled
+    command: >
+      poetry run uvicorn app.main:app
+      --host 0.0.0.0
+      --port 8232
+      --reload

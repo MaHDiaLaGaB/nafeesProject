@@ -1,6 +1,8 @@
 from sqlalchemy import Column, String, DateTime, Enum, Boolean
 from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import relationship
+from app.models.images import UploadedImage
+
 import enum, uuid, datetime as dt
 
 from app.database import Base
@@ -28,7 +30,7 @@ class User(Base):
 
     # inverse side of UploadedImage.user
     images = relationship(
-        "UploadedImage",
+        UploadedImage,
         back_populates="user",
         cascade="all, delete-orphan",
         lazy="selectin",

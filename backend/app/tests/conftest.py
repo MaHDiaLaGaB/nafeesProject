@@ -28,6 +28,7 @@ def client():
     """TestClient واحد طيلة الجلسة لتجنّب إعادة الإقلاع المستمر."""
     return TestClient(app)
 
+
 # -----------------------------------------------------------------------------
 # توكنات المستخدمين
 # -----------------------------------------------------------------------------
@@ -78,3 +79,19 @@ def customer_id(customer_token):
 @pytest.fixture(scope="session")
 def merchant_id(merchant_token):
     return _extract_user_id(merchant_token)
+
+
+@pytest.fixture(scope="session")
+def customer_client(customer_token):
+    """A TestClient that will act as the customer."""
+    client = TestClient(app)
+    # you can pre-inject the header if you like:
+    client.headers.update({"Authorization": f"Bearer {customer_token}"})
+    return client
+
+@pytest.fixture(scope="session")
+def merchant_client(merchant_token):
+    """A TestClient that will act as the merchant."""
+    client = TestClient(app)
+    client.headers.update({"Authorization": f"Bearer {merchant_token}"})
+    return client

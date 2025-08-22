@@ -33,7 +33,7 @@ def create_message(
     db: Session, payload: MessageCreate, sender_id: UUID, image_url: str | None = None
 ):
     msg = Message(
-        conversation_id=payload.conversation_id,
+        chat_id=payload.chat_id,
         sender_id=sender_id,
         content=payload.content,
         image_url=image_url,
@@ -44,10 +44,10 @@ def create_message(
     return msg
 
 
-def list_messages(db: Session, conversation_id: UUID):
+def list_messages(db: Session, chat_id: UUID):
     return (
         db.query(Message)
-        .filter(Message.conversation_id == conversation_id)
+        .filter(Message.chat_id == chat_id)
         .order_by(Message.created_at)
         .all()
     )

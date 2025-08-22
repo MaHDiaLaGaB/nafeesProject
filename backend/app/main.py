@@ -81,7 +81,7 @@ app.include_router(api_router)
 # Tell FastAPI to use our generator
 client = SupabaseClient()
 client.ensure_superadmin()
-# client.sign_in(email=settings.SUPERADMIN_EMAIL, password=settings.SUPERADMIN_PASSWORD)
+client.sign_in(email="Joudzahaf.jz@gmail.com", password="saleh1954")
 
 # ------------------------------------------------------------------
 # Ready!

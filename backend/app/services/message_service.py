@@ -33,8 +33,8 @@ class MessageService:
             raise HTTPException(status_code=404, detail=f"Message {msg_id} not found")
         return msg
 
-    async def get_messages_for_chat(self, conversation_id: UUID) -> List[MessageModel]:
-        return await self.msg_crud.get_all_by_field("conversation_id", conversation_id)
+    async def get_messages_for_chat(self, chat_id: UUID) -> List[MessageModel]:
+        return await self.msg_crud.get_all_by_field("chat_id", chat_id)
 
     async def delete_message(self, msg_id: UUID) -> None:
         await self.msg_crud.delete(msg_id)
